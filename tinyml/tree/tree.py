@@ -11,6 +11,10 @@ class DecisionTree:
             self.gain_func=self.Gain
         elif tree_type=='CART':
             self.gain_func=self.GiniIndex
+        elif tree_type=='C45':
+            self.gain_func=self.GainRatio
+        else:
+            raise ValueError('must be ID3 or CART or C45')
         self.tree=None
 
     def fit(self,X,y):
@@ -63,14 +67,26 @@ class DecisionTree:
             return np.argmax(np.bincount(y))
 
         gains=np.zeros((len(A),))
+        if self.tree_type=='C45':
+            gains=np.zeros((len(A),2))
         for i in range(len(A)):
             gains[i]=self.gain_func(D,A[i])
         #print(gains)
+        subA=None
         if self.tree_type=='CART':
             a_best=A[np.argmin(gains)]
+            subA=np.delete(A,np.argmin(gains))
         elif self.tree_type=='ID3':
             a_best=A[np.argmax(gains)]
-        subA=np.delete(A,np.argmax(gains))
+            subA=np.delete(A,np.argmax(gains))
+        elif self.tree_type=='C45':
+            gain_mean=np.mean(gains[:,0])
+            higher_than_mean_indices=np.where(gains[:,0]>=gain_mean)
+            higher_than_mean=gains[higher_than_mean_indices,1][0]
+            index=higher_than_mean_indices[0][np.argmax(higher_than_mean)]
+            a_best=A[index]
+            subA=np.delete(A,index)
+
         tree={a_best:{}}
 
         for av in aVs[a_best]:
@@ -145,6 +161,28 @@ class DecisionTree:
         gain = sum
         return gain
 
+    # 公式4.3 4.4
+    @classmethod
+    def GainRatio(cls,D,a):
+        X = D['X']
+        y = D['y']
+        aV = np.unique(X[:, a])
+        sum = 0.
+        intrinsic_value=0.
+        for v in range(len(aV)):
+            Dv = {}
+            indices = np.where(X[:, a] == aV[v])
+            Dv['X'] = X[indices]
+            Dv['y'] = y[indices]
+            ent = cls.Ent(Dv)
+            sum += (len(Dv['y']) / len(y) * ent)
+            intrinsic_value+=(len(Dv['y'])/len(y))*np.log2(len(Dv['y'])/len(y))
+        gain = cls.Ent(D) - sum
+        intrinsic_value=-intrinsic_value
+        gain_ratio=gain/intrinsic_value
+        return np.array([gain,gain_ratio])
+
+
 
 
 
@@ -170,7 +208,7 @@ if __name__=='__main__':
                      [1, 1, 0, 0, 1, 1], [2, 0, 0, 2, 2, 0],
                      [0, 0, 1, 1, 1, 0]])
 
-    decision_clf=DecisionTree(tree_type='CART')
+    decision_clf=DecisionTree(tree_type='ID3')
     decision_clf.fit(watermelon_data,label)
     print(decision_clf.tree)
     createPlot(decision_clf.tree)
