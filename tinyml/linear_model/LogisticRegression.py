@@ -22,6 +22,7 @@ class LogisticRegression:
     @staticmethod
     def _dldbeta(X,y,beta):
         '''
+        # 《机器学习》 公式 3.30
         # 分步计算的方法
         m=X.shape[0]
         sum=np.zeros(X.shape[1],).T
@@ -35,6 +36,7 @@ class LogisticRegression:
     @staticmethod
     def _dldldbetadbeta(X,beta):
         '''
+        # 《机器学习》公式 3.31
         # 非向量化的方法
         m=X.shape[0]
         sum=0.
@@ -76,7 +78,7 @@ if __name__=='__main__':
     y_pre = lr.predict(X_test)
     print(y_pre)
 
-    
+
     sklearn_logist=linear_model.LogisticRegression(max_iter=100,solver='newton-cg')
     sklearn_logist.fit(X,y)
     print(sklearn_logist.intercept_)
