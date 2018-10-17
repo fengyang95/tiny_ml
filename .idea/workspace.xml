@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="464edce4-ba5b-4e33-97d9-e0b8f86036ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tinyml/tree/DecisionTreeClassifier.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tinyml/tree/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tinyml/tree/t.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tinyml/tree/tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tinyml/tree/treePlotter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tinyml/discriminant_analysis/LDA.py" beforeDir="false" afterPath="$PROJECT_DIR$/tinyml/discriminant_analysis/LDA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tinyml/tree/tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/tinyml/tree/tree.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,13 +34,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="md" value="87" />
-          <entry key="py" value="9531" />
+          <entry key="py" value="9554" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="87" />
-          <entry key="Python" value="9531" />
+          <entry key="Python" value="9554" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -96,26 +90,17 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tinyml/tree/DecisionTreeClassifier.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tinyml/tree/tree.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="68" column="26" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="30" />
+            <state relative-caret-position="152">
+              <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <marker date="1539779615107" expanded="true" signature="102:103" ph="..." />
-                <marker date="1539779615107" expanded="true" signature="122:127" ph="..." />
-                <marker date="1539779615107" expanded="true" signature="649:1280" ph="..." />
-                <marker date="1539779615107" expanded="true" signature="2373:5158" ph="..." />
+                <marker date="1539780067548" expanded="true" signature="102:103" ph="..." />
+                <marker date="1539780067548" expanded="true" signature="122:127" ph="..." />
+                <marker date="1539780067548" expanded="true" signature="649:1298" ph="..." />
+                <marker date="1539780067548" expanded="true" signature="2392:5177" ph="..." />
               </folding>
             </state>
           </provider>
@@ -142,22 +127,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tinyml/tree/treePlotter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+            <state relative-caret-position="57">
+              <caret line="3" column="11" lean-forward="true" selection-end-line="7" selection-end-column="34" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tinyml/tree/t.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="16" column="10" selection-start-line="14" selection-end-line="23" selection-end-column="51" />
-              <folding>
-                <element signature="e#48#66#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -426,12 +399,12 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25775194" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25775194" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39583334" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39583334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -582,10 +555,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tinyml/tree/DecisionTreeClassifier.py">
+    <entry file="file://D:/Anaconda/Lib/site-packages/numpy/core/fromnumeric.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        <state relative-caret-position="-890">
+          <caret line="1006" column="4" selection-start-line="1006" selection-start-column="4" selection-end-line="1006" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -599,33 +572,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tinyml/tree/DecisionTreeClassifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tinyml/tree/treePlotter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        <state relative-caret-position="57">
+          <caret line="3" column="11" lean-forward="true" selection-end-line="7" selection-end-column="34" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Anaconda/Lib/site-packages/numpy/core/fromnumeric.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-890">
-          <caret line="1006" column="4" selection-start-line="1006" selection-start-column="4" selection-end-line="1006" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tinyml/tree/tree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="68" column="26" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="30" />
+        <state relative-caret-position="152">
+          <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1539779615107" expanded="true" signature="102:103" ph="..." />
-            <marker date="1539779615107" expanded="true" signature="122:127" ph="..." />
-            <marker date="1539779615107" expanded="true" signature="649:1280" ph="..." />
-            <marker date="1539779615107" expanded="true" signature="2373:5158" ph="..." />
+            <marker date="1539780067548" expanded="true" signature="102:103" ph="..." />
+            <marker date="1539780067548" expanded="true" signature="122:127" ph="..." />
+            <marker date="1539780067548" expanded="true" signature="649:1298" ph="..." />
+            <marker date="1539780067548" expanded="true" signature="2392:5177" ph="..." />
           </folding>
         </state>
       </provider>

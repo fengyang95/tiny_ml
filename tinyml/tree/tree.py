@@ -45,6 +45,7 @@ class DecisionTree:
         return np.array(y_pred)
 
 
+    # p74 图4.2算法图
     def TreeGenerate(self,D,A,aVs):
         X=D['X']
         y=D['y']
