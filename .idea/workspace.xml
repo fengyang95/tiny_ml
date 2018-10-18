@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="464edce4-ba5b-4e33-97d9-e0b8f86036ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tinyml/svm/SVC.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tinyml/svm/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tiny_ml.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tiny_ml.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tinyml/svm/SVC.py" beforeDir="false" afterPath="$PROJECT_DIR$/tinyml/svm/SVC.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +15,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/tiny_ml$tree.coverage" NAME="tree Coverage Results" MODIFIED="1539840958978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/tree" />
-    <SUITE FILE_PATH="coverage/tiny_ml$SVC.coverage" NAME="SVC Coverage Results" MODIFIED="1539866555654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/svm" />
+    <SUITE FILE_PATH="coverage/tiny_ml$SVC.coverage" NAME="SVC Coverage Results" MODIFIED="1539869593322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/svm" />
     <SUITE FILE_PATH="coverage/tiny_ml$svm.coverage" NAME="svm Coverage Results" MODIFIED="1539863637119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/svm" />
     <SUITE FILE_PATH="coverage/tiny_ml$LogisticRegression.coverage" NAME="LogisticRegression Coverage Results" MODIFIED="1539757907463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/linear_model" />
     <SUITE FILE_PATH="coverage/tiny_ml$LinearRegression.coverage" NAME="LinearRegression Coverage Results" MODIFIED="1539746390777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/linear_model" />
@@ -71,12 +67,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="6030" />
+          <entry key="py" value="6458" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="6030" />
+          <entry key="Python" value="6458" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -137,14 +133,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tinyml/svm/SVC.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="18" selection-start-column="18" selection-end-column="18" />
+            <state relative-caret-position="493">
+              <caret line="59" column="16" lean-forward="true" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
               <folding>
-                <marker date="1539866598881" expanded="true" signature="120:3957" ph="..." />
-                <marker date="1539866598881" expanded="true" signature="405:541" ph="..." />
-                <marker date="1539866598881" expanded="true" signature="1088:1358" ph="..." />
-                <marker date="1539866598881" expanded="true" signature="1410:1419" ph="..." />
-                <marker date="1539866598881" expanded="true" signature="1410:3269" ph="..." />
+                <marker date="1539869592816" expanded="true" signature="120:4289" ph="..." />
+                <marker date="1539869592816" expanded="true" signature="468:639" ph="..." />
+                <marker date="1539869592816" expanded="true" signature="1249:1519" ph="..." />
+                <marker date="1539869592816" expanded="true" signature="1571:1580" ph="..." />
+                <marker date="1539869592816" expanded="true" signature="1571:3430" ph="..." />
               </folding>
             </state>
           </provider>
@@ -445,12 +441,12 @@
     <frame x="1982" y="-4" width="1859" height="1085" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15922865" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15922865" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3548387" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3548387" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39958376" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -581,14 +577,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tinyml/svm/SVC.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        <state relative-caret-position="493">
+          <caret line="59" column="16" lean-forward="true" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
           <folding>
-            <marker date="1539866598881" expanded="true" signature="120:3957" ph="..." />
-            <marker date="1539866598881" expanded="true" signature="405:541" ph="..." />
-            <marker date="1539866598881" expanded="true" signature="1088:1358" ph="..." />
-            <marker date="1539866598881" expanded="true" signature="1410:1419" ph="..." />
-            <marker date="1539866598881" expanded="true" signature="1410:3269" ph="..." />
+            <marker date="1539869592816" expanded="true" signature="120:4289" ph="..." />
+            <marker date="1539869592816" expanded="true" signature="468:639" ph="..." />
+            <marker date="1539869592816" expanded="true" signature="1249:1519" ph="..." />
+            <marker date="1539869592816" expanded="true" signature="1571:1580" ph="..." />
+            <marker date="1539869592816" expanded="true" signature="1571:3430" ph="..." />
           </folding>
         </state>
       </provider>

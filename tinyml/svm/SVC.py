@@ -5,7 +5,7 @@ import numpy as np
 """
 np.random.seed(1)
 class SVC:
-    def __init__(self,max_iter=100,C=1,kernel='rbf'):
+    def __init__(self,max_iter=100,C=1,kernel='rbf',sigma=1):
         self.b=0.
         self.alpha=None
         self.max_iter=max_iter
@@ -14,14 +14,15 @@ class SVC:
         self.K=None
         self.X=None
         self.y=None
+        if kernel=='rbf':
+            self.sigma=sigma
         pass
 
     def kernel_func(self,kernel,x1,x2):
         if kernel=='linear':
             return x1.dot(x2.T)
-        else:
-            # 先用线性核函数
-            return x1.dot(x2.T)
+        elif kernel=='rbf':
+            return np.exp(-(np.sum((x1-x2)**2))/(2*self.sigma*self.sigma))
 
 
     def computeK(self,X,kernel):
@@ -37,10 +38,12 @@ class SVC:
 
 
     def compute_u(self,X,y):
-        #u=y*self.alpha*(self.K)-self.b
-        u = np.zeros((X.shape[0],))
-        for j in range(X.shape[0]):
-            u[j]=y[j]*self.alpha[j]*np.sum(self.K[j,:])-self.b
+        u=y*self.alpha*(np.sum(self.K,axis=0))-self.b
+        #print('u:',u)
+        #u = np.zeros((X.shape[0],))
+        #for j in range(X.shape[0]):
+        #    u[j]=y[j]*self.alpha[j]*np.sum(self.K[j,:])-self.b
+        #print('u:',u)
         return u
 
     def checkKKT(self,u,y,i):
@@ -100,22 +103,23 @@ class SVC:
         y_preds=[]
         for i in range(X.shape[0]):
             K=np.zeros((len(self.y),))
-            for j in range(len(self.y)):
+            support_indices=np.where(self.alpha>0)[0]
+            for j in support_indices:
                 K[j]=self.kernel_func(self.kernel,self.X[j],X[i])
-            y_pred=np.sum(self.y*self.alpha*K.T)
+            y_pred=np.sum(self.y[support_indices]*self.alpha[support_indices]*K[support_indices].T)
             y_pred+=self.b
             y_preds.append(y_pred)
         return np.array(y_preds)
 
 
 if __name__=='__main__':
-    X = np.array([[-1, -1], [-2, -1], [1, 1], [2, 1]])
-    y = np.array([1, 1, -1, -1])
-    svc=SVC(max_iter=-1)
+    X = np.array([[2, 2], [-2, -2], [1, 1], [-1, 1],[3,2],[0.3,0.2],[-0.2,-0.9],[2.3,0.9]])
+    y = np.array([1, 1, -1, -1,1,-1,-1,1])
+    svc=SVC(max_iter=10000,kernel='rbf')
     svc.fit(X,y)
     print('alpha:',svc.alpha)
     print('b:',svc.b)
-    pred_y=svc.predict(np.array([[2.2,1.3],[-1.2,-2]]))
+    pred_y=svc.predict(np.array([[2.2,1.3],[-1.2,-2],[0,0]]))
     pred_y=np.sign(pred_y)
     print('pred_y:',pred_y)
 
