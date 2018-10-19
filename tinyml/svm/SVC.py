@@ -36,14 +36,12 @@ class SVC:
                     K[i,j]=K[j,i]
         return K
 
-
+    # 计算u还有问题
     def compute_u(self,X,y):
-        u=y*self.alpha*(np.sum(self.K,axis=0))-self.b
-        #print('u:',u)
-        #u = np.zeros((X.shape[0],))
-        #for j in range(X.shape[0]):
-        #    u[j]=y[j]*self.alpha[j]*np.sum(self.K[j,:])-self.b
-        #print('u:',u)
+        u = np.zeros((X.shape[0],))
+        for j in range(X.shape[0]):
+            u[j]=np.sum(y*(self.alpha*self.K[j,:]+self.b))
+        print('u:',u)
         return u
 
     def checkKKT(self,u,y,i):
@@ -113,13 +111,14 @@ class SVC:
 
 
 if __name__=='__main__':
-    X = np.array([[2, 2], [-2, -2], [1, 1], [-1, 1],[3,2],[0.3,0.2],[-0.2,-0.9],[2.3,0.9]])
-    y = np.array([1, 1, -1, -1,1,-1,-1,1])
-    svc=SVC(max_iter=10000,kernel='rbf')
+    X = np.array([[2, 2], [3, 1], [1, 3], [0,4],[-2,-2],[-1.3,-2.7],[-0.2,-3.8],[2.3,-6.3]])
+    y = np.array([-1, -1, -1, -1,1,1,1,1])
+    svc=SVC(max_iter=100,kernel='linear',C=1)
     svc.fit(X,y)
     print('alpha:',svc.alpha)
     print('b:',svc.b)
-    pred_y=svc.predict(np.array([[2.2,1.3],[-1.2,-2],[0,0]]))
+    pred_y=svc.predict(np.array([[2.3,1.7],[-2,-2],[0,4]]))
+    print('pred_y1:',pred_y)
     pred_y=np.sign(pred_y)
     print('pred_y:',pred_y)
 
