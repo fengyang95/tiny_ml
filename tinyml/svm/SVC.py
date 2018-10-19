@@ -2,6 +2,7 @@ import numpy as np
 
 """
 [知乎专栏：支持向量机(SVM)——SMO算法](https://zhuanlan.zhihu.com/p/32152421)
+[SMO算法](https://blog.csdn.net/c406495762/article/details/78072313#2-smo%E7%AE%97%E6%B3%95)
 """
 np.random.seed(1)
 class SVC:
@@ -40,7 +41,7 @@ class SVC:
     def compute_u(self,X,y):
         u = np.zeros((X.shape[0],))
         for j in range(X.shape[0]):
-            u[j]=np.sum(y*(self.alpha*self.K[j,:]+self.b))
+            u[j]=np.sum(y*self.alpha*self.K[:,j])+self.b
         print('u:',u)
         return u
 
@@ -111,15 +112,24 @@ class SVC:
 
 
 if __name__=='__main__':
-    X = np.array([[2, 2], [3, 1], [1, 3], [0,4],[-2,-2],[-1.3,-2.7],[-0.2,-3.8],[2.3,-6.3]])
-    y = np.array([-1, -1, -1, -1,1,1,1,1])
+    """
+    # 测试 线性核
+    X = np.array([[2, -1], [3, -2], [1, 0], [0,1],[-2,1],[-1.3,0.3],[-0.2,-0.8],[2.3,-3.3]])
+    y = np.array([1, 1, 1, 1,-1,-1,-1,-1])
     svc=SVC(max_iter=100,kernel='linear',C=1)
+    """
+    # 测试rbf核
+    X=np.array([[1,0],[-1,0],[0,-1],[0,1],[2,np.sqrt(5)],[2,-np.sqrt(5)],[-2,np.sqrt(5)],[-2,-np.sqrt(5)],[30,40]])
+    y=np.array([-1,-1,-1,-1,1,1,1,1,1])
+    svc=SVC(max_iter=100,kernel='rbf',C=1)
     svc.fit(X,y)
     print('alpha:',svc.alpha)
     print('b:',svc.b)
-    pred_y=svc.predict(np.array([[2.3,1.7],[-2,-2],[0,4]]))
+    pred_y=svc.predict(np.array([[1,0],[-np.sqrt(5),-2],[0,1]]))
     print('pred_y1:',pred_y)
     pred_y=np.sign(pred_y)
     print('pred_y:',pred_y)
+
+
 
 
