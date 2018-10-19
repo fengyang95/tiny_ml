@@ -2,9 +2,9 @@ import numpy as np
 
 """
 [知乎专栏：支持向量机(SVM)——SMO算法](https://zhuanlan.zhihu.com/p/32152421)
-[SMO算法](https://blog.csdn.net/c406495762/article/details/78072313#2-smo%E7%AE%97%E6%B3%95)
 """
 np.random.seed(1)
+
 class SVC:
     def __init__(self,max_iter=100,C=1,kernel='rbf',sigma=1):
         self.b=0.
@@ -118,7 +118,7 @@ if __name__=='__main__':
     # 测试 线性核
     X = np.array([[2, -1], [3, -2], [1, 0], [0,1],[-2,1],[-1.3,0.3],[-0.2,-0.8],[2.3,-3.3],[-2,-4],[7,8]])
     y = np.array([1, 1, 1, 1,-1,-1,-1,-1,-1,1])
-    svc=SVC(max_iter=100,kernel='linear',C=10000)
+    svc=SVC(max_iter=100,kernel='linear',C=1)
 
     """
     # 测试rbf核
