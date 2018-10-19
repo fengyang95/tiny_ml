@@ -37,12 +37,10 @@ class SVC:
                     K[i,j]=K[j,i]
         return K
 
-    # 计算u还有问题
     def compute_u(self,X,y):
         u = np.zeros((X.shape[0],))
         for j in range(X.shape[0]):
             u[j]=np.sum(y*self.alpha*self.K[:,j])+self.b
-        print('u:',u)
         return u
 
     def checkKKT(self,u,y,i):
@@ -90,9 +88,13 @@ class SVC:
                         self.alpha[j]=alpha2_new_unc
                     self.alpha[i]=alpha1_old+y[i]*y[j]*(alpha2_old-self.alpha[j])
                     b1_new=-E_i-y[i]*self.K[i,i]*(self.alpha[i]-alpha1_old)-y[j]*self.K[j,i]*(self.alpha[j]-alpha2_old)+self.b
-                    b2_new=-E_j-y[i]*self.K[i,j]*(self.alpha[i]-alpha1_old)-y[2]*self.K[j,j]*(self.alpha[j]-alpha2_old)+self.b
-                    self.b=(b1_new+b2_new)/2
-
+                    b2_new=-E_j-y[i]*self.K[i,j]*(self.alpha[i]-alpha1_old)-y[j]*self.K[j,j]*(self.alpha[j]-alpha2_old)+self.b
+                    if self.alpha[i]>0 and self.alpha[i]<self.C:
+                        self.b=b1_new
+                    elif self.alpha[j]>0 and self.alpha[j]<self.C:
+                        self.b=b2_new
+                    else:
+                        self.b=(b1_new+b2_new)/2
             if finish:
                 break
 
@@ -112,20 +114,22 @@ class SVC:
 
 
 if __name__=='__main__':
-    """
+
     # 测试 线性核
-    X = np.array([[2, -1], [3, -2], [1, 0], [0,1],[-2,1],[-1.3,0.3],[-0.2,-0.8],[2.3,-3.3]])
-    y = np.array([1, 1, 1, 1,-1,-1,-1,-1])
-    svc=SVC(max_iter=100,kernel='linear',C=1)
+    X = np.array([[2, -1], [3, -2], [1, 0], [0,1],[-2,1],[-1.3,0.3],[-0.2,-0.8],[2.3,-3.3],[-2,-4],[7,8]])
+    y = np.array([1, 1, 1, 1,-1,-1,-1,-1,-1,1])
+    svc=SVC(max_iter=100,kernel='linear',C=10000)
+
     """
     # 测试rbf核
-    X=np.array([[1,0],[-1,0],[0,-1],[0,1],[2,np.sqrt(5)],[2,-np.sqrt(5)],[-2,np.sqrt(5)],[-2,-np.sqrt(5)],[30,40]])
+    X=np.array([[1,0],[-1,0],[0,-1],[0,1],[2,np.sqrt(5)],[2,-np.sqrt(5)],[-2,np.sqrt(5)],[-2,-np.sqrt(5)],[300,400]])
     y=np.array([-1,-1,-1,-1,1,1,1,1,1])
     svc=SVC(max_iter=100,kernel='rbf',C=1)
+    """
     svc.fit(X,y)
     print('alpha:',svc.alpha)
     print('b:',svc.b)
-    pred_y=svc.predict(np.array([[1,0],[-np.sqrt(5),-2],[0,1]]))
+    pred_y=svc.predict(np.array([[1,0],[-0.2,-0.1],[0,1]]))
     print('pred_y1:',pred_y)
     pred_y=np.sign(pred_y)
     print('pred_y:',pred_y)

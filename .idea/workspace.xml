@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="464edce4-ba5b-4e33-97d9-e0b8f86036ff" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tinyml/svm/SVC.py" beforeDir="false" afterPath="$PROJECT_DIR$/tinyml/svm/SVC.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,7 +17,7 @@
     <SUITE FILE_PATH="coverage/tiny_ml$LogisticRegression.coverage" NAME="LogisticRegression Coverage Results" MODIFIED="1539757907463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/linear_model" />
     <SUITE FILE_PATH="coverage/tiny_ml$t.coverage" NAME="t Coverage Results" MODIFIED="1539777101529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/tree" />
     <SUITE FILE_PATH="coverage/tiny_ml$LinearRegression.coverage" NAME="LinearRegression Coverage Results" MODIFIED="1539746390777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/linear_model" />
-    <SUITE FILE_PATH="coverage/tiny_ml$SVC.coverage" NAME="SVC Coverage Results" MODIFIED="1539923354358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/svm" />
+    <SUITE FILE_PATH="coverage/tiny_ml$SVC.coverage" NAME="SVC Coverage Results" MODIFIED="1539926940557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/svm" />
     <SUITE FILE_PATH="coverage/tiny_ml$tree.coverage" NAME="tree Coverage Results" MODIFIED="1539840958978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/tree" />
     <SUITE FILE_PATH="coverage/tiny_ml$svm.coverage" NAME="svm Coverage Results" MODIFIED="1539863637119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/svm" />
     <SUITE FILE_PATH="coverage/tiny_ml$LDA.coverage" NAME="LDA Coverage Results" MODIFIED="1539746373897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/discriminant_analysis" />
@@ -39,13 +38,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="md" value="206" />
-          <entry key="py" value="11053" />
+          <entry key="py" value="11428" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="206" />
-          <entry key="Python" value="11053" />
+          <entry key="Python" value="11428" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -136,8 +135,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tinyml/svm/SVC.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="66" column="23" lean-forward="true" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
+            <state relative-caret-position="310">
+              <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
             </state>
           </provider>
         </entry>
@@ -424,7 +423,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.56527776" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31666666" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39958376" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -537,8 +536,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tinyml/svm/SVC.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="66" column="23" lean-forward="true" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
+        <state relative-caret-position="310">
+          <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
         </state>
       </provider>
     </entry>
