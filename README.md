@@ -5,3 +5,4 @@
 2、**LogisticRegression**  
 3、**LDA**  
 4、**DecisionTree**
+5、**SVC**
