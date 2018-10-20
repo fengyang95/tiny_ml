@@ -14,7 +14,6 @@ class LVQ:
         self.max_iter=max_iter
         self.C=None
         self.labels_=None
-        pass
 
     # p205 图9.4 学习向量量化算法
     def fit(self,X,y):
@@ -90,7 +89,5 @@ if __name__=='__main__':
     plt.scatter(lvq.p[3:4,0],lvq.p[3:4,1],c='m',marker='+')
     plt.scatter(X[np.where(lvq.labels_ == 4), 0], X[np.where(lvq.labels_ == 4), 1], c='y')
     plt.scatter(lvq.p[4:5, 0], lvq.p[4:5, 1], c='y',marker='+')
-
-
     plt.show()
 
