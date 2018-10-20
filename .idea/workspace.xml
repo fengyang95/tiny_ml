@@ -6,7 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="464edce4-ba5b-4e33-97d9-e0b8f86036ff" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tinyml/discriminant_analysis/LDA.py" beforeDir="false" afterPath="$PROJECT_DIR$/tinyml/discriminant_analysis/LDA.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +27,7 @@
     <SUITE FILE_PATH="coverage/tiny_ml$t.coverage" NAME="t Coverage Results" MODIFIED="1540046489537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/cluster" />
     <SUITE FILE_PATH="coverage/tiny_ml$NaiveBayesClassifier.coverage" NAME="NaiveBayesClassifier Coverage Results" MODIFIED="1539951141963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/bayes" />
     <SUITE FILE_PATH="coverage/tiny_ml$KMeans.coverage" NAME="KMeans Coverage Results" MODIFIED="1540048634987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/cluster" />
-    <SUITE FILE_PATH="coverage/tiny_ml$LDA.coverage" NAME="LDA Coverage Results" MODIFIED="1539746373897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/discriminant_analysis" />
+    <SUITE FILE_PATH="coverage/tiny_ml$LDA.coverage" NAME="LDA Coverage Results" MODIFIED="1540050268419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/discriminant_analysis" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-863725231">
@@ -48,28 +48,28 @@
         <counts>
           <entry key="csv" value="24" />
           <entry key="md" value="413" />
-          <entry key="py" value="25015" />
+          <entry key="py" value="25025" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSV" value="24" />
           <entry key="Markdown" value="413" />
-          <entry key="Python" value="25015" />
+          <entry key="Python" value="25025" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="1" />
           <entry key="md" value="1" />
-          <entry key="py" value="39" />
+          <entry key="py" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSV" value="1" />
           <entry key="Markdown" value="1" />
-          <entry key="Python" value="39" />
+          <entry key="Python" value="40" />
         </counts>
       </usages-collector>
     </session>
@@ -104,7 +104,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -112,6 +112,18 @@
                 <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tinyml/discriminant_analysis/LDA.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -125,15 +137,6 @@
                 <element signature="e#0#18#0" expanded="true" />
                 <marker date="1540048693618" expanded="true" signature="64:69" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/Anaconda/Lib/site-packages/sklearn/cluster/hierarchical.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="710" selection-start-line="710" selection-end-line="710" />
             </state>
           </provider>
         </entry>
@@ -245,7 +248,6 @@
         <option value="$PROJECT_DIR$/tinyml/util.py" />
         <option value="$PROJECT_DIR$/tinyml/linear_model/LinearRegression.py" />
         <option value="$PROJECT_DIR$/tinyml/linear_model/LDA.py" />
-        <option value="$PROJECT_DIR$/tinyml/discriminant_analysis/LDA.py" />
         <option value="$PROJECT_DIR$/tinyml/linear_model/LogisticRegression.py" />
         <option value="$PROJECT_DIR$/tinyml/tree/DecisionTreeClassifier.py" />
         <option value="$PROJECT_DIR$/tinyml/tree/treePlotter.py" />
@@ -263,6 +265,7 @@
         <option value="$PROJECT_DIR$/tinyml/cluster/DBSCAN.py" />
         <option value="$PROJECT_DIR$/tinyml/cluster/AGNES.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/tinyml/discriminant_analysis/LDA.py" />
       </list>
     </option>
   </component>
@@ -290,6 +293,17 @@
             <path>
               <item name="tiny_ml" type="b2602c69:ProjectViewProjectNode" />
               <item name="tiny_ml" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tiny_ml" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tiny_ml" type="462c0819:PsiDirectoryNode" />
+              <item name="tinyml" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tiny_ml" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tiny_ml" type="462c0819:PsiDirectoryNode" />
+              <item name="tinyml" type="462c0819:PsiDirectoryNode" />
+              <item name="discriminant_analysis" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -322,29 +336,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.LVQ">
-    <configuration name="AGNES" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tiny_ml" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tinyml/cluster" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tinyml/cluster/AGNES.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.LDA">
     <configuration name="DBSCAN" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tiny_ml" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -411,6 +403,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="LDA" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tiny_ml" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tinyml/discriminant_analysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tinyml/discriminant_analysis/LDA.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="LVQ" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tiny_ml" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -437,16 +451,16 @@
       <item itemvalue="Python.KMeans" />
       <item itemvalue="Python.GaussianMixture" />
       <item itemvalue="Python.DBSCAN" />
-      <item itemvalue="Python.AGNES" />
       <item itemvalue="Python.LVQ" />
+      <item itemvalue="Python.LDA" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.LDA" />
         <item itemvalue="Python.LVQ" />
         <item itemvalue="Python.KMeans" />
         <item itemvalue="Python.GaussianMixture" />
         <item itemvalue="Python.DBSCAN" />
-        <item itemvalue="Python.AGNES" />
       </list>
     </recent_temporary>
   </component>
@@ -467,12 +481,12 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989775" visible="true" weight="0.17183463" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989775" visible="true" weight="0.17183463" />
       <window_info id="Structure" order="1" sideWeight="0.5010225" side_tool="true" visible="true" weight="0.17183463" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32083333" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32083333" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39958376" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -536,16 +550,6 @@
           <caret line="68" column="24" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tinyml/discriminant_analysis/LDA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1216">
-          <caret line="65" column="39" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -709,6 +713,16 @@
             <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tinyml/discriminant_analysis/LDA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
