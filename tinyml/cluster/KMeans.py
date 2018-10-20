@@ -17,9 +17,7 @@ class KMeans:
             for i in range(self.k):
                 C[i]=[]
             for j in range(X.shape[0]):
-                d=np.zeros((self.k,))
-                for i in range(self.k):
-                    d[i]=np.sqrt(np.sum((X[j]-self.mu[i])**2))
+                d=np.sqrt(np.sum((X[j]-self.mu)**2,axis=1))
                 lambda_j=np.argmin(d)
                 C[lambda_j].append(j)
             mu_=np.zeros((self.k,X.shape[1]))
