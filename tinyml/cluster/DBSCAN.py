@@ -52,13 +52,19 @@ if __name__=='__main__':
                 [0.748,0.232],[0.714,0.346],[0.483,0.312],[0.478,0.437],[0.525,0.369],
                 [0.751,0.489],[0.532,0.472],[0.473,0.376],[0.725,0.445],[0.446,0.459]])
 
-    X_test=X
     dbscan=DBSCAN()
     dbscan.fit(X)
     print('C:',dbscan.C)
     print(dbscan.labels_)
-    plt.scatter(X[np.where(dbscan.labels_ == 0), 0], X[np.where(dbscan.labels_ == 0), 1], c='r')
-    plt.scatter(X[np.where(dbscan.labels_ == 1), 0], X[np.where(dbscan.labels_ == 1), 1], c='g')
-    plt.scatter(X[np.where(dbscan.labels_ == 2), 0], X[np.where(dbscan.labels_ == 2), 1], c='b')
-    plt.scatter(X[np.where(dbscan.labels_ == 3), 0], X[np.where(dbscan.labels_ == 3), 1], c='y')
+    plt.scatter(X[:,0],X[:,1],c=dbscan.labels_)
+    plt.title('tinyml')
     plt.show()
+
+    import sklearn.cluster as cluster
+    sklearn_DBSCAN=cluster.DBSCAN(eps=0.11,min_samples=5,metric='l2')
+    sklearn_DBSCAN.fit(X)
+    print(sklearn_DBSCAN.labels_)
+    plt.scatter(X[:,0],X[:,1],c=sklearn_DBSCAN.labels_)
+    plt.title('sklearn')
+    plt.show()
+

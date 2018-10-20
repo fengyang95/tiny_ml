@@ -12,6 +12,8 @@ class KMeans:
     # p203图9.2算法流程
     def fit(self,X):
         self.mu=X[random.sample(range(X.shape[0]),self.k)]
+        # 书上例子
+        self.mu=X[[5,11,23]]
         while True:
             C={}
             for i in range(self.k):
@@ -23,7 +25,7 @@ class KMeans:
             mu_=np.zeros((self.k,X.shape[1]))
             for i in range(self.k):
                 mu_[i]=np.mean(X[C[i]],axis=0)
-            if np.sum((mu_-self.mu)**2)<1e-5:
+            if np.sum((mu_-self.mu)**2)<1e-8:
                 self.C=C
                 break
             else:
@@ -49,19 +51,25 @@ if __name__=='__main__':
                 [0.593,0.042],[0.719,0.103],[0.359,0.188],[0.339,0.241],[0.282,0.257],
                 [0.748,0.232],[0.714,0.346],[0.483,0.312],[0.478,0.437],[0.525,0.369],
                 [0.751,0.489],[0.532,0.472],[0.473,0.376],[0.725,0.445],[0.446,0.459]])
-    X_test=X
+
     kmeans=KMeans(k=3)
     kmeans.fit(X)
     print(kmeans.C)
     print(kmeans.labels_)
     print(kmeans.predict(X))
 
-    plt.scatter(X[np.where(kmeans.labels_==0),0],X[np.where(kmeans.labels_==0),1],c='r')
-    plt.scatter(kmeans.mu[0:1,0],kmeans.mu[0:1,1],c='r',marker='+')
-    plt.scatter(X[np.where(kmeans.labels_==1),0],X[np.where(kmeans.labels_==1),1],c='g')
-    plt.scatter(kmeans.mu[1:2,0],kmeans.mu[1:2,1],c='g',marker='+')
-    plt.scatter(X[np.where(kmeans.labels_==2),0],X[np.where(kmeans.labels_==2),1],c='b')
-    plt.scatter(kmeans.mu[2:3,0],kmeans.mu[2:3,1],c='b',marker='+')
+    plt.scatter(X[:,0],X[:,1],c=kmeans.labels_)
+    plt.scatter(kmeans.mu[:,0],kmeans.mu[:,1],c=range(kmeans.k),marker='+')
+    plt.title('tinyml')
     plt.show()
+
+    from sklearn.cluster import KMeans
+    sklearn_kmeans=KMeans(n_clusters=3)
+    sklearn_kmeans.fit(X)
+    print(sklearn_kmeans.labels_)
+    plt.scatter(X[:,0],X[:,1],c=sklearn_kmeans.labels_)
+    plt.title('sklearn')
+    plt.show()
+
 
 

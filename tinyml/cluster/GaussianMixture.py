@@ -32,7 +32,7 @@ class GaussianMixture:
                     alpha_p[i]=self.alpha[i]*self._p(X[j],self.mu[i],self.cov[i])
                     sum+=alpha_p[i]
                 self.gamma[j,:]=alpha_p/sum
-                
+
             for i in range(self.k):
                 sum_gamma_i=np.sum(self.gamma[:,i])
                 self.mu[i]=X.T.dot(self.gamma[:,i])/sum_gamma_i
@@ -76,15 +76,26 @@ if __name__=='__main__':
                 [0.751,0.489],[0.532,0.472],[0.473,0.376],[0.725,0.445],[0.446,0.459]])
 
     X_test=X
-    gmm=GaussianMixture(k=3)
+    gmm=GaussianMixture(k=3,max_iter=50)
     gmm.fit(X)
     print(gmm.C)
     print(gmm.labels_)
     print(gmm.predict(X_test))
-    plt.scatter(X[np.where(gmm.labels_ == 0), 0], X[np.where(gmm.labels_ == 0), 1], c='r')
-    plt.scatter(gmm.mu[0:1, 0], gmm.mu[0:1, 1], c='r', marker='+')
-    plt.scatter(X[np.where(gmm.labels_ == 1), 0], X[np.where(gmm.labels_ == 1), 1], c='g')
-    plt.scatter(gmm.mu[1:2, 0], gmm.mu[1:2, 1], c='g', marker='+')
-    plt.scatter(X[np.where(gmm.labels_ == 2), 0], X[np.where(gmm.labels_ == 2), 1], c='b')
-    plt.scatter(gmm.mu[2:3, 0], gmm.mu[2:3, 1], c='b', marker='+')
+    plt.scatter(X[:, 0], X[:, 1], c=gmm.labels_)
+    plt.scatter(gmm.mu[:, 0], gmm.mu[:, 1],c=range(gmm.k), marker='+')
+    plt.title('tinyml')
     plt.show()
+
+    """
+    from sklearn.mixture import GaussianMixture
+
+    sklearn_gmm = GaussianMixture(n_components=3, covariance_type='full',
+                                  max_iter=50).fit(X)
+    labels=sklearn_gmm.predict(X)
+    print(labels)
+    plt.scatter(X[:,0],X[:,1],c=labels)
+    plt.title('sklearn')
+    plt.show()
+    """
+
+
