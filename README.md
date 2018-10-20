@@ -7,4 +7,4 @@
 4、**DecisionTree**  
 5、**SVC**  
 6、**NaiveBayesClassifier**  
-7、**KMeans**、**LVQ**、**GaussianMixture**
+7、**KMeans**、**LVQ**、**GaussianMixture**、**DBSCAN**
