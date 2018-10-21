@@ -28,8 +28,9 @@ class MDS:
                 B_new[i,j]=-0.5*(Dist_2[i,j]-Dist_i2[i,0]-Dist_j2[0,j]+dist_2)
         """
         w,v=np.linalg.eig(B_new)
-        self.w_=w[:self.d_]
-        self.v_=v[:,:self.d_]
+        idx=np.argsort(-w)
+        self.w_=w[idx][:self.d_]
+        self.v_=v[:,idx][:,:self.d_]
         self.Z=self.v_.dot(np.diag(self.w_)).real
 
     def fit_transform(self,X):
@@ -49,6 +50,10 @@ if __name__=='__main__':
     Z=mds.fit_transform(X)
     print(Z)
 
+    """
     import sklearn.manifold as manifold
     sklearn_MDS=manifold.MDS(n_components=2,metric=True)
     print(sklearn_MDS.fit_transform(X))
+    """
+
+
