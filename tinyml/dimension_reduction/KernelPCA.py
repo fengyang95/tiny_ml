@@ -31,8 +31,8 @@ class KernelPCA:
     # p233 公式10.24
     def fit(self,X):
         self.mean_x=np.mean(X,axis=0)
-        X=X-self.mean_x
-        K=self.computeK(X,kernel=self.kernel)
+        X_new=X-self.mean_x
+        K=self.computeK(X_new,kernel=self.kernel)
         v,w = np.linalg.eig(K)
         idx = v.argsort()[::-1]
         self.alpha_=w[:,idx][:,:self.d_]
@@ -41,7 +41,7 @@ class KernelPCA:
     # 公式 10.25
     def fit_transform(self,X):
         self.fit(X)
-        X=X-self.mean_x
+        X = X - self.mean_x
         m=X.shape[0]
         self.Z=np.zeros((m,self.d_))
         for k in range(m):
@@ -64,9 +64,11 @@ if __name__=='__main__':
     pca=KernelPCA(d_=2,kernel='linear')
     Z=pca.fit_transform(X)
     print(Z)
-    """
+
     import sklearn.decomposition as decomposition
     sklearn_PCA=decomposition.KernelPCA(n_components=2,kernel='linear',eigen_solver='arpack')
-    print(sklearn_PCA.fit_transform(X))
-    """
+    Z2=sklearn_PCA.fit_transform(X)
+    print(Z2)
+
+
 

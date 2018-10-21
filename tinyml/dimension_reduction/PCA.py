@@ -10,8 +10,8 @@ class PCA:
     # p231 图10.5 PCA算法
     def fit(self,X):
         self.mean_x=np.mean(X,axis=0)
-        X=X-self.mean_x
-        covM=X.T.dot(X)
+        X_new=X-self.mean_x
+        covM=X_new.T.dot(X_new)
         v,w = np.linalg.eig(covM)
         idx = v.argsort()[::-1]
         self.W=w[:,idx][:,:self.d_]
