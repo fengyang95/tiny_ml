@@ -5,10 +5,10 @@ Omega的计算参考这篇blog
 [局部线性嵌入(LLE)原理总结](https://www.cnblogs.com/pinard/p/6266408.html?utm_source=itdadao&utm_medium=referral)
 """
 class LLE:
-    def __init__(self,d_=2,k=6):
+    def __init__(self,d_=2,k=6,reg=1e-3):
         self.d_=d_
         self.k=k
-        self.test={}
+        self.reg=reg
 
     # p237 图10.10 LLE算法
     def fit(self,X):
@@ -32,9 +32,7 @@ class LLE:
 
     def compute_omega(self,i,X):
         Z=(X[i]-X[self.Q[i]]).dot((X[i]-X[self.Q[i]]).T)
-        #
-        if self.k > X.shape[1]:
-            Z += 1e-3 * np.trace(Z) * np.identity(self.k)
+        Z += self.reg * np.trace(Z) * np.identity(self.k)
         Ik=np.ones((self.k,))
         Zinv=np.linalg.inv(Z)
         self.Omega[i, self.Q[i]]=np.matmul(Zinv,Ik)/(Ik.T.dot(Zinv).dot(Ik))
@@ -47,13 +45,12 @@ if __name__=='__main__':
                   [0.748, 0.232], [0.714, 0.346], [0.483, 0.312], [0.478, 0.437], [0.525, 0.369],
                   [0.751, 0.489], [0.532, 0.472], [0.473, 0.376], [0.725, 0.445], [0.446, 0.459]])
     X = np.c_[X, X]
-    lle = LLE(d_=2, k=5)
+    lle = LLE(d_=2, k=5,reg=1e-3)
     Z = lle.fit_transform(X)
     print(Z)
 
-
     import sklearn.manifold as manifold
-    sklearn_LLE= manifold.LocallyLinearEmbedding(n_components=2,n_neighbors=5)
+    sklearn_LLE= manifold.LocallyLinearEmbedding(n_components=2,n_neighbors=5,reg=1e-3)
     Z2 = sklearn_LLE.fit_transform(X)
     print(Z2)
 

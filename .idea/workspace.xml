@@ -6,11 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="464edce4-ba5b-4e33-97d9-e0b8f86036ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tinyml/dimension_reduction/LLE.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tinyml/dimension_reduction/KernelPCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/tinyml/dimension_reduction/KernelPCA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tinyml/dimension_reduction/PCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/tinyml/dimension_reduction/PCA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tinyml/dimension_reduction/LLE.py" beforeDir="false" afterPath="$PROJECT_DIR$/tinyml/dimension_reduction/LLE.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +26,7 @@
     <SUITE FILE_PATH="coverage/tiny_ml$LogisticRegression.coverage" NAME="LogisticRegression Coverage Results" MODIFIED="1540086213243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/linear_model" />
     <SUITE FILE_PATH="coverage/tiny_ml$DBSCAN.coverage" NAME="DBSCAN Coverage Results" MODIFIED="1540086257418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/cluster" />
     <SUITE FILE_PATH="coverage/tiny_ml$PCA.coverage" NAME="PCA Coverage Results" MODIFIED="1540111993226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/dimension_reduction" />
-    <SUITE FILE_PATH="coverage/tiny_ml$LLE.coverage" NAME="LLE Coverage Results" MODIFIED="1540128868683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/dimension_reduction" />
+    <SUITE FILE_PATH="coverage/tiny_ml$LLE.coverage" NAME="LLE Coverage Results" MODIFIED="1540129848157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/dimension_reduction" />
     <SUITE FILE_PATH="coverage/tiny_ml$t.coverage" NAME="t Coverage Results" MODIFIED="1540108065184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/dimension_reduction" />
     <SUITE FILE_PATH="coverage/tiny_ml$NaiveBayesClassifier.coverage" NAME="NaiveBayesClassifier Coverage Results" MODIFIED="1539951141963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/bayes" />
     <SUITE FILE_PATH="coverage/tiny_ml$KMeans.coverage" NAME="KMeans Coverage Results" MODIFIED="1540086355315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/cluster" />
@@ -58,7 +54,7 @@
           <entry key="csv" value="24" />
           <entry key="dummy" value="6" />
           <entry key="md" value="459" />
-          <entry key="py" value="30612" />
+          <entry key="py" value="30703" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -66,7 +62,7 @@
           <entry key="CSV" value="24" />
           <entry key="Markdown" value="459" />
           <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Python" value="30612" />
+          <entry key="Python" value="30703" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -127,14 +123,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/LLE.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="55" column="35" lean-forward="true" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="48" />
+            <state relative-caret-position="247">
+              <caret line="13" column="18" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="18" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <marker date="1540128868616" expanded="true" signature="171:172" ph="..." />
-                <marker date="1540128868616" expanded="true" signature="171:884" ph="..." />
-                <marker date="1540128868616" expanded="true" signature="171:1212" ph="..." />
-                <marker date="1540128868616" expanded="true" signature="171:1213" ph="..." />
+                <marker date="1540129888462" expanded="true" signature="171:172" ph="..." />
+                <marker date="1540129888462" expanded="true" signature="171:893" ph="..." />
+                <marker date="1540129888462" expanded="true" signature="171:1179" ph="..." />
+                <marker date="1540129888462" expanded="true" signature="171:1180" ph="..." />
               </folding>
             </state>
           </provider>
@@ -143,13 +139,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://D:/Anaconda/Lib/site-packages/sklearn/manifold/locally_linear.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="631" column="30" selection-start-line="631" selection-start-column="21" selection-end-line="631" selection-end-column="37" />
+            <state relative-caret-position="139">
+              <caret line="613" column="8" selection-start-line="613" selection-start-column="8" selection-end-line="613" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -179,11 +175,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/MDS.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+            <state relative-caret-position="-152">
+              <caret line="35" column="30" lean-forward="true" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
                 <marker date="1540119647490" expanded="true" signature="96:101" ph="..." />
@@ -275,8 +271,8 @@
         <option value="$PROJECT_DIR$/tinyml/dimension_reduction/KernelPCA.py" />
         <option value="$PROJECT_DIR$/tinyml/dimension_reduction/PCA.py" />
         <option value="$PROJECT_DIR$/tinyml/dimension_reduction/MDS.py" />
-        <option value="$PROJECT_DIR$/tinyml/dimension_reduction/LLE.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/tinyml/dimension_reduction/LLE.py" />
       </list>
     </option>
   </component>
@@ -500,12 +496,12 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.69673705" visible="true" weight="0.17183463" />
-      <window_info id="Structure" order="1" sideWeight="0.30326295" side_tool="true" visible="true" weight="0.17183463" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6965812" visible="true" weight="0.17183463" />
+      <window_info id="Structure" order="1" sideWeight="0.30341882" side_tool="true" visible="true" weight="0.17183463" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27638888" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3986111" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -737,28 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/MDS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1540119647490" expanded="true" signature="96:101" ph="..." />
-            <marker date="1540119647490" expanded="true" signature="1054:1063" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/PCA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <marker date="1540111993192" expanded="true" signature="30:35" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/KernelPCA.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="668">
@@ -770,27 +744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="537">
           <caret line="530" lean-forward="true" selection-start-line="530" selection-end-line="530" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/LLE.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="55" column="35" lean-forward="true" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1540128868616" expanded="true" signature="171:172" ph="..." />
-            <marker date="1540128868616" expanded="true" signature="171:884" ph="..." />
-            <marker date="1540128868616" expanded="true" signature="171:1212" ph="..." />
-            <marker date="1540128868616" expanded="true" signature="171:1213" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda/Lib/site-packages/sklearn/manifold/locally_linear.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="631" column="30" selection-start-line="631" selection-start-column="21" selection-end-line="631" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -808,6 +761,49 @@
             <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Anaconda/Lib/site-packages/sklearn/manifold/locally_linear.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="613" column="8" selection-start-line="613" selection-start-column="8" selection-end-line="613" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/LLE.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1540129888462" expanded="true" signature="171:172" ph="..." />
+            <marker date="1540129888462" expanded="true" signature="171:893" ph="..." />
+            <marker date="1540129888462" expanded="true" signature="171:1179" ph="..." />
+            <marker date="1540129888462" expanded="true" signature="171:1180" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/PCA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <marker date="1540111993192" expanded="true" signature="30:35" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/MDS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-152">
+          <caret line="35" column="30" lean-forward="true" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1540119647490" expanded="true" signature="96:101" ph="..." />
+            <marker date="1540119647490" expanded="true" signature="1054:1063" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
