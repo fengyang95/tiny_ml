@@ -39,4 +39,7 @@ if __name__=='__main__':
 
     import sklearn.decomposition as decomposition
     sklearn_PCA=decomposition.PCA(n_components=2,svd_solver='full')
-    print(sklearn_PCA.fit_transform(X))
+    Z2=sklearn_PCA.fit_transform(X)
+    print(Z2)
+
+    print('diff:',np.sum((Z-Z2)**2))
