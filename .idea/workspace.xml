@@ -6,11 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="464edce4-ba5b-4e33-97d9-e0b8f86036ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tinyml/dimension_reduction/t.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tinyml/dimension_reduction/MDS.py" beforeDir="false" afterPath="$PROJECT_DIR$/tinyml/dimension_reduction/MDS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tinyml/dimension_reduction/PCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/tinyml/dimension_reduction/PCA.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,14 +51,14 @@
         <counts>
           <entry key="csv" value="24" />
           <entry key="dummy" value="6" />
-          <entry key="md" value="432" />
+          <entry key="md" value="434" />
           <entry key="py" value="27145" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSV" value="24" />
-          <entry key="Markdown" value="432" />
+          <entry key="Markdown" value="434" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="Python" value="27145" />
         </counts>
@@ -126,8 +122,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="190">
-                <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+              <first_editor relative-caret-position="171">
+                <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
               </first_editor>
               <second_editor />
             </state>
@@ -184,19 +180,6 @@
                 <element signature="e#0#18#0" expanded="true" />
                 <marker date="1540108107619" expanded="true" signature="96:101" ph="..." />
                 <marker date="1540108107619" expanded="true" signature="1054:1063" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/t.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="88" selection-start-line="88" selection-end-line="88" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-                <marker date="1540108024503" expanded="true" signature="3311:3316" ph="..." />
               </folding>
             </state>
           </provider>
@@ -732,23 +715,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/PCA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding>
-            <marker date="1540107127006" expanded="true" signature="30:35" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/t.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="88" selection-start-line="88" selection-end-line="88" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-            <marker date="1540108024503" expanded="true" signature="3311:3316" ph="..." />
           </folding>
         </state>
       </provider>
@@ -765,11 +737,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/PCA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding>
+            <marker date="1540107127006" expanded="true" signature="30:35" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="190">
-            <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <first_editor relative-caret-position="171">
+            <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
           </first_editor>
           <second_editor />
         </state>
