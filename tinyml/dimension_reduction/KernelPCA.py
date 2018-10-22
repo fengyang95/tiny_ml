@@ -1,21 +1,30 @@
 import numpy as np
+# 线性核 与 sklearn 结果一致
+#　其他核都与sklearn结果不一致!!! 还没找到原因
 
 class KernelPCA:
-    def __init__(self,d_=2,kernel='linear',sigma=1.):
+    def __init__(self,d_=2,kernel='linear',gamma=None,coef0=1.,degress=3):
         self.d_=d_
         self.W=None
         self.mean_x=None
         self.V=None
         self.kernel=kernel
-        if kernel=='rbf':
-            self.sigma=sigma
+        self.coef0=coef0
+        self.degress=degress
+        if gamma is None:
+            self.gamma=1./self.d_
+        else:
+            self.gamma=gamma
 
     def kernel_func(self,kernel,x1,x2):
         if kernel=='linear':
             return x1.dot(x2.T)
         elif kernel=='rbf':
-            return np.exp(-(np.sum((x1-x2)**2))/(2*self.sigma*self.sigma))
-
+            return np.exp(-self.gamma*(np.sum((x1-x2)**2)))
+        elif kernel=='poly':
+            return np.power(self.gamma*(x1.dot(x2.T)+1)+self.coef0,self.degress)
+        elif kernel=='sigmoid':
+            return np.tanh(self.gamma*(x1.dot(x2.T))+self.coef0)
 
     def computeK(self,X,kernel):
         m=X.shape[0]
@@ -33,10 +42,13 @@ class KernelPCA:
         self.mean_x=np.mean(X,axis=0)
         X_new=X-self.mean_x
         K=self.computeK(X_new,kernel=self.kernel)
-        v,w = np.linalg.eig(K)
-        idx = v.argsort()[::-1]
-        self.alpha_=w[:,idx][:,:self.d_]
-        self.lambda_=v[idx][:self.d_]
+        # sklearn实现用的eigh分解
+        values,vectors = np.linalg.eigh(K)
+        idx = values.argsort()[::-1]
+        # 这一步不可少
+        vectors/=np.sqrt(values)
+        self.alphas_= vectors[:, idx][:, :self.d_]
+        self.lambdas_= values[idx][:self.d_]
 
     # 公式 10.25
     def fit_transform(self,X):
@@ -48,8 +60,8 @@ class KernelPCA:
             for j in range(self.d_):
                 sum=0.
                 for i in range(m):
-                    sum+=self.alpha_[i,j]*self.kernel_func(self.kernel,X[i],X[k])
-                self.Z[k,j]=sum.real
+                    sum+= self.alphas_[i, j] * (self.kernel_func(self.kernel, X[i], X[k]))
+                self.Z[k,j]=sum
         return self.Z
 
 
@@ -60,15 +72,24 @@ if __name__=='__main__':
                 [0.593,0.042],[0.719,0.103],[0.359,0.188],[0.339,0.241],[0.282,0.257],
                 [0.748,0.232],[0.714,0.346],[0.483,0.312],[0.478,0.437],[0.525,0.369],
                 [0.751,0.489],[0.532,0.472],[0.473,0.376],[0.725,0.445],[0.446,0.459]])
+
     X=np.c_[X,X]
-    pca=KernelPCA(d_=2,kernel='linear')
-    Z=pca.fit_transform(X)
+    kpca=KernelPCA(d_=2, kernel='linear', gamma=1. / 2)
+    Z=kpca.fit_transform(X)
+    print('tinyml:')
+    #print('lambdas:', kpca.lambdas_)
+    #print('alphas:', kpca.alphas_)
     print(Z)
 
     import sklearn.decomposition as decomposition
-    sklearn_PCA=decomposition.KernelPCA(n_components=2,kernel='linear',eigen_solver='arpack')
-    Z2=sklearn_PCA.fit_transform(X)
+    sklearn_KPCA=decomposition.KernelPCA(n_components=2, kernel='linear', gamma=1. / 2, eigen_solver='dense', random_state=False)
+    Z2=sklearn_KPCA.fit_transform(X)
+    print('sklearn')
+    #print('lambdas:',sklearn_KPCA.lambdas_)
+    #print('alphas:',sklearn_KPCA.alphas_)
     print(Z2)
+
+    print('Z diff:',np.sum((Z-Z2)**2))
 
 
 

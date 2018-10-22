@@ -1,14 +1,14 @@
 import numpy as np
 import matplotlib.pyplot as plt
 # 不知道如何验证正确性，sklearn中的实现方式和西瓜书中不一致,sklearn中用的smacof方法
+# 和自己实现的KernelPCA线性核时结果一致
 
 class MDS:
     def __init__(self,d_=2):
         self.d_=d_
         self.Z=None
-        self.w_=None
-        self.v_=None
-
+        self.values_=None
+        self.vectors_=None
 
     # p229 图10.3 MDS算法
     def fit(self,X):
@@ -29,13 +29,14 @@ class MDS:
             for j in range(m):
                 B_new[i,j]=-0.5*(Dist_2[i,j]-Dist_i2[i,0]-Dist_j2[0,j]+dist_2)
         """
-        w,v=np.linalg.eig(B_new)
-        idx=np.argsort(w)[::-1]
-        self.w_=w[idx][:self.d_]
-        self.v_=v[:,idx][:,:self.d_]
-        print(self.w_.shape)
-        print(self.v_.shape)
-        self.Z=self.v_.dot(np.diag(np.sqrt(self.w_))).real
+        # 用eig和eigh函数分解出的结果符号位不同
+        values,vectors=np.linalg.eig(B_new)
+        #values,vectors=np.linalg.eigh(B_new)
+        idx=np.argsort(values)[::-1]
+        self.values_=values[idx][:self.d_]
+        # print('values:',self.values_)
+        self.vectors_=vectors[:,idx][:,:self.d_]
+        self.Z=self.vectors_.dot(np.diag(np.sqrt(self.values_))).real
 
     def fit_transform(self,X):
         self.fit(X)
@@ -55,11 +56,14 @@ if __name__=='__main__':
     Z=mds.fit_transform(np.array(X))
     print(Z)
 
+    """
     import sklearn.manifold as manifold
     sklearn_MDS=manifold.MDS(n_components=2,metric=True,random_state=False)
     Z2=sklearn_MDS.fit_transform(X)
     print(Z2)
-
     print('diff:',np.sum((Z-Z2)**2))
+    """
+
+
 
 
