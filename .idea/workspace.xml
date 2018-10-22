@@ -2,13 +2,10 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/tinyml/linear_model/LogisticRegression.py" line="32" />
-    <bookmark url="file://$PROJECT_DIR$/tinyml/cluster/KMeans.py" line="9" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="464edce4-ba5b-4e33-97d9-e0b8f86036ff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tinyml/dimension_reduction/MDS.py" beforeDir="false" afterPath="$PROJECT_DIR$/tinyml/dimension_reduction/MDS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tinyml/dimension_reduction/PCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/tinyml/dimension_reduction/PCA.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,15 +37,16 @@
     <session id="-863725231">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.38" value="1" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.52" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -116,8 +114,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/KernelPCA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+            <state relative-caret-position="1558">
+              <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
             </state>
           </provider>
         </entry>
@@ -126,7 +124,7 @@
         <entry file="file://D:/Anaconda/Lib/site-packages/sklearn/decomposition/kernel_pca.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
-              <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -134,7 +132,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/LLE.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
+            <state relative-caret-position="228">
               <caret line="13" column="18" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="18" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -150,7 +148,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://D:/Anaconda/Lib/site-packages/sklearn/manifold/locally_linear.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
+            <state relative-caret-position="11457">
               <caret line="613" column="8" selection-start-line="613" selection-start-column="8" selection-end-line="613" selection-end-column="8" />
             </state>
           </provider>
@@ -171,7 +169,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://D:/Anaconda/Lib/site-packages/sklearn/neighbors/unsupervised.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1915">
+            <state relative-caret-position="2128">
               <caret line="115" column="8" selection-start-line="115" selection-start-column="8" selection-end-line="115" selection-end-column="8" />
             </state>
           </provider>
@@ -180,8 +178,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://D:/Anaconda/Lib/site-packages/numpy/linalg/linalg.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="530" lean-forward="true" selection-start-line="530" selection-end-line="530" />
+            <state relative-caret-position="10070">
+              <caret line="530" selection-start-line="530" selection-end-line="530" />
             </state>
           </provider>
         </entry>
@@ -189,12 +187,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/MDS.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
+            <state relative-caret-position="19">
               <caret line="2" column="53" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <marker date="1540132405425" expanded="true" signature="116:121" ph="..." />
-                <marker date="1540132405425" expanded="true" signature="1135:1144" ph="..." />
               </folding>
             </state>
           </provider>
@@ -203,8 +199,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://D:/Anaconda/Lib/site-packages/sklearn/manifold/mds.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="898">
-              <caret line="333" column="14" lean-forward="true" selection-start-line="333" selection-start-column="14" selection-end-line="333" selection-end-column="14" />
+            <state relative-caret-position="6156">
+              <caret line="333" column="14" selection-start-line="333" selection-start-column="14" selection-end-line="333" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -212,7 +208,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/PCA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
+            <state relative-caret-position="836">
               <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
               <folding>
                 <marker date="1540132479674" expanded="true" signature="30:35" ph="..." />
@@ -288,6 +284,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -300,17 +297,10 @@
               <item name="tiny_ml" type="462c0819:PsiDirectoryNode" />
               <item name="tinyml" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="tiny_ml" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tiny_ml" type="462c0819:PsiDirectoryNode" />
-              <item name="tinyml" type="462c0819:PsiDirectoryNode" />
-              <item name="dimension_reduction" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -488,14 +478,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.69711536" visible="true" weight="0.17183463" />
-      <window_info id="Structure" order="1" sideWeight="0.3028846" side_tool="true" visible="true" weight="0.17183463" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6958333" visible="true" weight="0.1744186" />
+      <window_info id="Structure" order="1" sideWeight="0.30416667" side_tool="true" visible="true" weight="0.1744186" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42222223" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42222223" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3986111" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -553,9 +542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -580,23 +566,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tinyml/cluster/t.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="44" column="42" selection-start-line="43" selection-start-column="12" selection-end-line="44" selection-end-column="50" />
-          <folding>
-            <element signature="e#68#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tinyml/cluster/util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tinyml/cluster/t.py" />
+    <entry file="file://$PROJECT_DIR$/tinyml/cluster/util.py" />
     <entry file="file://D:/Anaconda/Lib/site-packages/sklearn/mixture/gaussian_mixture.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="412">
@@ -608,9 +579,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-397">
           <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding>
-            <marker date="1539951133852" expanded="true" signature="55:60" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -618,9 +586,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
           <caret line="66" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -655,9 +620,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-361">
           <caret line="182" column="42" selection-start-line="182" selection-start-column="42" selection-end-line="182" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -665,11 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="722">
           <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1540048693425" expanded="true" signature="94:99" ph="..." />
-            <marker date="1540048693425" expanded="true" signature="94:1275" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -677,10 +634,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
           <caret line="73" selection-start-line="73" selection-end-line="73" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1540048693527" expanded="true" signature="91:96" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -688,10 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="912">
           <caret line="99" column="21" selection-start-line="99" selection-start-column="21" selection-end-line="99" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1540048693618" expanded="true" signature="64:69" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -699,10 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="53" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1540048693485" expanded="true" signature="118:123" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -710,24 +655,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1794">
           <caret line="95" column="39" selection-start-line="95" selection-start-column="39" selection-end-line="95" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/t.py" />
+    <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/KernelPCA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1558">
+          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Anaconda/Lib/site-packages/sklearn/decomposition/kernel_pca.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/LLE.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="18" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1540048693577" expanded="true" signature="74:79" ph="..." />
+            <marker date="1540129888462" expanded="true" signature="171:172" ph="..." />
+            <marker date="1540129888462" expanded="true" signature="171:893" ph="..." />
+            <marker date="1540129888462" expanded="true" signature="171:1179" ph="..." />
+            <marker date="1540129888462" expanded="true" signature="171:1180" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Anaconda/Lib/site-packages/numpy/linalg/linalg.py">
+    <entry file="file://D:/Anaconda/Lib/site-packages/sklearn/manifold/locally_linear.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="530" lean-forward="true" selection-start-line="530" selection-end-line="530" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda/Lib/site-packages/sklearn/neighbors/unsupervised.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1915">
-          <caret line="115" column="8" selection-start-line="115" selection-start-column="8" selection-end-line="115" selection-end-column="8" />
+        <state relative-caret-position="11457">
+          <caret line="613" column="8" selection-start-line="613" selection-start-column="8" selection-end-line="613" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -741,74 +704,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Anaconda/Lib/site-packages/sklearn/manifold/locally_linear.py">
+    <entry file="file://D:/Anaconda/Lib/site-packages/sklearn/neighbors/unsupervised.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="613" column="8" selection-start-line="613" selection-start-column="8" selection-end-line="613" selection-end-column="8" />
+        <state relative-caret-position="2128">
+          <caret line="115" column="8" selection-start-line="115" selection-start-column="8" selection-end-line="115" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Anaconda/Lib/site-packages/numpy/linalg/linalg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10070">
+          <caret line="530" selection-start-line="530" selection-end-line="530" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/MDS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
+        <state relative-caret-position="19">
           <caret line="2" column="53" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1540132405425" expanded="true" signature="116:121" ph="..." />
-            <marker date="1540132405425" expanded="true" signature="1135:1144" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/PCA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
-          <folding>
-            <marker date="1540132479674" expanded="true" signature="30:35" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/t.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://D:/Anaconda/Lib/site-packages/sklearn/manifold/mds.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="898">
-          <caret line="333" column="14" lean-forward="true" selection-start-line="333" selection-start-column="14" selection-end-line="333" selection-end-column="14" />
+        <state relative-caret-position="6156">
+          <caret line="333" column="14" selection-start-line="333" selection-start-column="14" selection-end-line="333" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/LLE.py">
+    <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/PCA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="18" />
+        <state relative-caret-position="836">
+          <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1540129888462" expanded="true" signature="171:172" ph="..." />
-            <marker date="1540129888462" expanded="true" signature="171:893" ph="..." />
-            <marker date="1540129888462" expanded="true" signature="171:1179" ph="..." />
-            <marker date="1540129888462" expanded="true" signature="171:1180" ph="..." />
+            <marker date="1540132479674" expanded="true" signature="30:35" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda/Lib/site-packages/sklearn/decomposition/kernel_pca.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/KernelPCA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
         </state>
       </provider>
     </entry>
