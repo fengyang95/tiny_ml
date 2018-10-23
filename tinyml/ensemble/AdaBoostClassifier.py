@@ -11,7 +11,7 @@ import sklearn.datasets as datasets
 
 
 class AdaBoostClassifier:
-    def __init__(self, base_estimator=LogisticRegression(solver='newton-cg'), n_estimators=300):
+    def __init__(self, base_estimator=None, n_estimators=300):
         self.base_estimator = base_estimator
         self.n_estimators = n_estimators
         self.hs_ = []
@@ -58,26 +58,27 @@ if __name__ == '__main__':
     y = 2 * y - 1
     X_train, y_train = X[:200], y[:200]
     X_test, y_test = X[200:], y[200:]
+    base_estimator=DecisionTreeClassifier(max_depth=1,random_state=False)
 
-    sklearn_decision_tree = LogisticRegression(solver='newton-cg')
+    sklearn_decision_tree = DecisionTreeClassifier(max_depth=1)
     sklearn_decision_tree.fit(X_train, y_train)
     y_pred_decison_tree = sklearn_decision_tree.predict(X_test)
     print('single decision tree:', len(y_test[y_pred_decison_tree == y_test]) * 1.0 / len(y_test))
 
     print('tinyml:')
-    adaboost_clf = AdaBoostClassifier(n_estimators=100)
+    adaboost_clf = AdaBoostClassifier(n_estimators=100,base_estimator=base_estimator)
     adaboost_clf.fit(X_train, y_train)
-    print('alpha:', adaboost_clf.alphas_)
-    print('epsilon:', adaboost_clf.epsilons_)
+    #print('alpha:', adaboost_clf.alphas_)
+    #print('epsilon:', adaboost_clf.epsilons_)
     y_pred = adaboost_clf.predict(X_test)
     print('adaboost y_pred:', len(y_test[y_pred == y_test]) * 1. / len(y_test))
 
     print('sklearn:')
     sklearn_adboost_clf = sklearnAdaBoostClassifier(n_estimators=100, random_state=False, algorithm='SAMME',
-                                                    base_estimator=LogisticRegression(solver='newton-cg'))
+                                                    base_estimator=base_estimator)
     sklearn_adboost_clf.fit(X_train, y_train)
-    print('alpha:', sklearn_adboost_clf.estimator_weights_)
-    print('epsilon:', sklearn_adboost_clf.estimator_errors_)
+    #print('alpha:', sklearn_adboost_clf.estimator_weights_)
+    #print('epsilon:', sklearn_adboost_clf.estimator_errors_)
     sklearn_y_pred = sklearn_adboost_clf.predict(X_test)
     print('sklearn adaboost y_pred:', len(y_test[y_test == sklearn_y_pred]) * 1. / len(y_test))
 
