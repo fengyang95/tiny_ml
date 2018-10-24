@@ -1,4 +1,3 @@
-
 # 只针对2分类
 # 自己实现的DecisionTreeClassifier没有实现 sample_weight参数
 # 重点在AdaBoost， 使用sklearn的DecisionTreeClassifier作为基学习器
@@ -8,7 +7,6 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import AdaBoostClassifier as sklearnAdaBoostClassifier
 from sklearn.linear_model import LogisticRegression
 import sklearn.datasets as datasets
-
 
 class AdaBoostClassifier:
     def __init__(self, base_estimator=None, n_estimators=300):
