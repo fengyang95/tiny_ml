@@ -9,9 +9,10 @@ from sklearn.linear_model import LogisticRegression
 import sklearn.datasets as datasets
 
 class AdaBoostClassifier:
-    def __init__(self, base_estimator=None, n_estimators=300):
+    def __init__(self, base_estimator=None, n_estimators=300,method='re-weighting'):
         self.base_estimator = base_estimator
         self.n_estimators = n_estimators
+        self.method=method
         self.hs_ = []
         self.epsilons_ = []
         self.alphas_ = []
@@ -22,7 +23,11 @@ class AdaBoostClassifier:
         self.Ds_.append(np.ones((m,)) / m)
         for t in range(self.n_estimators):
             ht = self.base_estimator
-            ht.fit(X, y, self.Ds_[t])
+            if self.method=='re-weighting':
+                ht.fit(X, y, self.Ds_[t])
+            elif self.method=='re-sampling':
+                sample_indices=np.random.choice(range(m),size=m,p=self.Ds_[t])
+                ht.fit(X[sample_indices],y[sample_indices])
             y_pred = ht.predict(X).astype(np.int32)
             valid_indices = (y != y_pred)
             mask = np.ones((len(y),))
@@ -64,7 +69,7 @@ if __name__ == '__main__':
     print('single decision tree:', len(y_test[y_pred_decison_tree == y_test]) * 1.0 / len(y_test))
 
     print('tinyml:')
-    adaboost_clf = AdaBoostClassifier(n_estimators=100,base_estimator=base_estimator)
+    adaboost_clf = AdaBoostClassifier(n_estimators=100,base_estimator=base_estimator,method='re-weighting')
     adaboost_clf.fit(X_train, y_train)
     #print('alpha:', adaboost_clf.alphas_)
     #print('epsilon:', adaboost_clf.epsilons_)
