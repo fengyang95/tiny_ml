@@ -78,19 +78,19 @@ class DecisionTreeRegressor:
 if __name__=='__main__':
     breast_data = datasets.load_boston()
     X, y = breast_data.data, breast_data.target
-    X_train, y_train = X[:300], y[:300]
-    X_test, y_test = X[300:], y[300:]
+    X_train, y_train = X[:200], y[:200]
+    X_test, y_test = X[200:], y[200:]
 
 
-    decisiontree_reg=DecisionTreeRegressor(min_samples_split=20)
+    decisiontree_reg=DecisionTreeRegressor(min_samples_split=20,min_samples_leaf=5)
     decisiontree_reg.fit(X_train,y_train)
     print(decisiontree_reg.tree)
-    #treePlotter.createPlot(decisiontree_reg.tree)
+    treePlotter.createPlot(decisiontree_reg.tree)
     y_pred=decisiontree_reg.predict(X_test)
     print('tinyml mse:',mean_squared_error(y_test,y_pred))
 
 
-    sklearn_reg=tree.DecisionTreeRegressor(min_samples_split=20)
+    sklearn_reg=tree.DecisionTreeRegressor(min_samples_split=20,min_samples_leaf=5)
     sklearn_reg.fit(X_train,y_train)
     sklearn_pred=sklearn_reg.predict(X_test)
     print('sklearn mse:',mean_squared_error(y_test,sklearn_pred))
