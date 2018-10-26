@@ -3,7 +3,7 @@ import numpy as np
 # 只处理离散值，不考虑缺失值
 from tinyml.tree.treePlotter import createPlot
 np.random.seed(100)
-class DecisionTree:
+class DecisionTreeClassifier:
     def __init__(self,tree_type='ID3',k_classes=2):
         self.tree_type=tree_type
         self.k_classes=k_classes
@@ -208,7 +208,7 @@ if __name__=='__main__':
                      [1, 1, 0, 0, 1, 1], [2, 0, 0, 2, 2, 0],
                      [0, 0, 1, 1, 1, 0]])
 
-    decision_clf=DecisionTree(tree_type='ID3')
+    decision_clf=DecisionTreeClassifier(tree_type='ID3')
     decision_clf.fit(watermelon_data,label)
     print(decision_clf.tree)
     createPlot(decision_clf.tree)
