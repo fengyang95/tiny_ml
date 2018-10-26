@@ -3,11 +3,13 @@ from tinyml.tree import treePlotter
 import sklearn.datasets as datasets
 from sklearn.metrics import mean_squared_error
 import sklearn.tree as tree
+import graphviz
 
 # 《统计学习方法》 p69 最小二乘回归树
 class DecisionTreeRegressor:
-    def __init__(self, min_samples_split=3):
+    def __init__(self, min_samples_split=3,min_samples_leaf=1):
         self.min_samples_split=min_samples_split
+        self.min_samples_leaf=min_samples_leaf
         self.tree = None
 
     def fit(self, X, y):
@@ -54,12 +56,14 @@ class DecisionTreeRegressor:
             for s in np.unique(X[:,j]):
                 left_indices=np.where(X[:,j]<=s)[0]
                 right_indices=np.where(X[:,j]>s)[0]
-                if len(left_indices)==0  or len(right_indices)==0:
+                if len(left_indices)<self.min_samples_leaf or len(right_indices)<self.min_samples_leaf:
                     continue
                 val=np.sum((y[left_indices]-np.mean(y[left_indices]))**2)+np.sum((y[right_indices]-np.mean(y[right_indices]))**2)
                 if val<min_val:
                     split_j=j
                     split_s=s
+        if split_j is None:
+            return np.mean(y)
         tree = {split_j: {}}
         left_indices=np.where(X[:,split_j]<=split_s)[0]
         right_indices=np.where(X[:,split_j]>split_s)[0]
@@ -90,3 +94,5 @@ if __name__=='__main__':
     sklearn_reg.fit(X_train,y_train)
     sklearn_pred=sklearn_reg.predict(X_test)
     print('sklearn mse:',mean_squared_error(y_test,sklearn_pred))
+    dot_data=tree.export_graphviz(sklearn_reg,out_file=None)
+    graph=graphviz.Source(dot_data)
