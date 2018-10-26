@@ -4,7 +4,7 @@
 1、**LinearRegression**  
 2、**LogisticRegression**  
 3、**LDA**  
-4、**DecisionTree**、**DecisionTreeRegressor**  
+4、**DecisionTreeClassifier**、**DecisionTreeRegressor**  
 5、**SVC**  
 6、**NaiveBayesClassifier**  
 7、**KMeans**、**LVQ**、**GaussianMixture**、**DBSCAN**、**AGNES**  
