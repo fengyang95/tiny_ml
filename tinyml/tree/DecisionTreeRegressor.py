@@ -7,9 +7,10 @@ import graphviz
 
 # 《统计学习方法》 p69 最小二乘回归树
 class DecisionTreeRegressor:
-    def __init__(self, min_samples_split=3,min_samples_leaf=1):
+    def __init__(self, min_samples_split=3,min_samples_leaf=1,random_state=False):
         self.min_samples_split=min_samples_split
         self.min_samples_leaf=min_samples_leaf
+        self.random=random_state
         self.tree = None
 
 
@@ -53,7 +54,11 @@ class DecisionTreeRegressor:
         split_j=None
         split_s=None
         min_val=1.e10
-        for j in A:
+        select_A=A
+        if self.random is True:
+            d=len(A)
+            select_A=np.random.choice(A,size=int(d//2),replace=False)
+        for j in select_A:
             for s in np.unique(X[:,j]):
                 left_indices=np.where(X[:,j]<=s)[0]
                 right_indices=np.where(X[:,j]>s)[0]
