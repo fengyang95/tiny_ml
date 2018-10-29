@@ -43,7 +43,7 @@ class MSELoss(LossBase):
 
 class CART:
 
-    def __init__(self, reg_lambda=1, gamma=0., max_depth=3,col_sample_ratio=0.6,row_sample_ratio=1.):
+    def __init__(self, reg_lambda=1, gamma=0., max_depth=3,col_sample_ratio=0.5,row_sample_ratio=1.):
         self.reg_lambda=reg_lambda
         self.gamma=gamma
         self.max_depth=max_depth
@@ -165,13 +165,13 @@ class XGBRegressor:
             estimator_t=CART(self.reg_lambda, self.gamma, self.max_depth)
             y_target=y-y_pred
             estimator_t.fit(X,y_target,g,h)
-            #print(estimator_t.tree)
-            #print('leaf_nodes:',estimator_t.leaf_nodes)
-            #print('obj_val:',estimator_t.obj_val)
+            # print(estimator_t.tree)
+            # print('leaf_nodes:',estimator_t.leaf_nodes)
+            # print('obj_val:',estimator_t.obj_val)
             self.estimators_.append(estimator_t)
             y_pred+=(self.eta*estimator_t.predict(X))
             loss=MSELoss(y,y_pred)
-            print('t:',t,' loss:',np.mean(loss.forward()))
+            # print('t:',t,' loss:',np.mean(loss.forward()))
             g,h=loss.g(),loss.h()
 
     def predict(self,X):
