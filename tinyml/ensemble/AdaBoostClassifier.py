@@ -54,7 +54,6 @@ class AdaBoostClassifier:
         return np.sign(H)
 
 
-
 if __name__ == '__main__':
     breast_data = datasets.load_breast_cancer()
     X, y = breast_data.data, breast_data.target
