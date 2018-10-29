@@ -27,8 +27,8 @@ class RandomForestRegressor:
 if __name__=='__main__':
     breast_data = datasets.load_boston()
     X, y = breast_data.data, breast_data.target
-    X_train, y_train = X[:300], y[:300]
-    X_test, y_test = X[300:], y[300:]
+    X_train, y_train = X[:200], y[:200]
+    X_test, y_test = X[200:], y[200:]
 
     tinyml_decisiontree_reg=tree.DecisionTreeRegressor(min_samples_split=20, min_samples_leaf=5,random_state=True)
     tinyml_decisiontree_reg.fit(X_train, y_train)
