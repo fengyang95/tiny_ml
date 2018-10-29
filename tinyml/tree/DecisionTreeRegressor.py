@@ -67,6 +67,8 @@ class DecisionTreeRegressor:
                 if val<min_val:
                     split_j=j
                     split_s=s
+                    min_val=val
+
         if split_j is None:
             return np.mean(y)
         tree = {split_j: {}}
