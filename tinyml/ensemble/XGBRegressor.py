@@ -125,6 +125,8 @@ class CART:
                 if gain>max_gain:
                     split_j=j
                     split_s=s
+                    max_gain=gain
+
         if split_j is None:
             G = np.sum(g[indices])
             H = np.sum(h[indices])
@@ -190,7 +192,7 @@ if __name__=='__main__':
     decisiontree_pred=sklearn_decisiontree_reg.predict(X_test)
     print('base estimator:',mean_squared_error(y_test,decisiontree_pred))
 
-    tinyml_gbdt_reg=XGBRegressor(n_estimators=100,max_depth=10,gamma=0.)
+    tinyml_gbdt_reg=XGBRegressor(n_estimators=100,max_depth=3,gamma=0.)
     tinyml_gbdt_reg.fit(X_train, y_train)
     y_pred=tinyml_gbdt_reg.predict(X_test)
     print('tinyml mse:',mean_squared_error(y_test,y_pred))
