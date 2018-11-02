@@ -1,7 +1,8 @@
 import numpy as np
 from sklearn import linear_model
-
 np.random.seed(1)
+
+
 class LogisticRegression:
     def __init__(self,max_iter=100):
         self.beta=None

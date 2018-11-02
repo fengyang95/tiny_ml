@@ -1,9 +1,14 @@
 import numpy as np
-
-# 只处理离散值，不考虑缺失值
+"""
+简单的决策树实现，算法参考 周志华《机器学习》一书
+只处理离散值，不考虑缺失值
+"""
 from tinyml.tree.treePlotter import createPlot
 np.random.seed(100)
 class DecisionTreeClassifier:
+    """
+    决策树分类
+    """
     def __init__(self,tree_type='ID3',k_classes=2):
         self.tree_type=tree_type
         self.k_classes=k_classes
@@ -101,9 +106,14 @@ class DecisionTreeClassifier:
         return tree
 
 
-    # 《机器学习》 公式4.1 信息熵
+
     @classmethod
     def Ent(cls,D):
+        """
+         《机器学习》 公式4.1 信息熵
+        :param D: 数据集
+        :return: 信息熵
+        """
         y=D['y']
         bin_count=np.bincount(y)
         total=len(y)
@@ -114,10 +124,12 @@ class DecisionTreeClassifier:
                  ent+=p_k*np.log2(p_k)
         return -ent
 
-    # 《机器学习》 公式4.2 信息增益
-    # a表示属性 列 index
     @classmethod
     def Gain(cls,D,a):
+        """
+        《机器学习》 公式4.2 信息增益
+        a表示属性列 index
+        """
         X=D['X']
         y=D['y']
         aV=np.unique(X[:,a])
@@ -132,9 +144,11 @@ class DecisionTreeClassifier:
         gain=cls.Ent(D)-sum
         return gain
 
-    # 《机器学习》 公式4.5
     @classmethod
     def Gini(cls,D):
+        """
+        《机器学习》 公式4.5
+        """
         y = D['y']
         bin_count = np.bincount(y)
         total = len(y)
@@ -144,9 +158,11 @@ class DecisionTreeClassifier:
             ent+=p_k**2
         return 1-ent
 
-    # 公式4.6
     @classmethod
     def GiniIndex(cls,D,a):
+        """
+        公式4.6
+        """
         X = D['X']
         y = D['y']
         aV = np.unique(X[:, a])
@@ -161,9 +177,11 @@ class DecisionTreeClassifier:
         gain = sum
         return gain
 
-    # 公式4.3 4.4
     @classmethod
     def GainRatio(cls,D,a):
+        """
+        公式4.3 4.4
+        """
         X = D['X']
         y = D['y']
         aV = np.unique(X[:, a])
@@ -182,12 +200,6 @@ class DecisionTreeClassifier:
         gain_ratio=gain/intrinsic_value
         return np.array([gain,gain_ratio])
 
-
-
-
-
-
-
 if __name__=='__main__':
     watermelon_data = np.array([[0, 0, 0, 0, 0, 0], [1, 0, 1, 0, 0, 0],
                                 [1, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0],
@@ -199,10 +211,6 @@ if __name__=='__main__':
                                 [1, 1, 0, 0, 1, 1], [2, 0, 0, 2, 2, 0],
                                 [0, 0, 1, 1, 1, 0]])
     label = np.array([1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0])
-    #train_indices=np.array([0,1,2,5,6,9,13,14,15,16])
-    #watermelon_data=watermelon_data[train_indices]
-    #label=label[train_indices]
-
     X_test=np.array([[0, 0, 1, 0, 0, 0], [1, 0, 1, 0, 0, 0],
                         [1, 1, 0, 1, 1, 0], [1, 0, 1, 1, 1, 0],
                      [1, 1, 0, 0, 1, 1], [2, 0, 0, 2, 2, 0],

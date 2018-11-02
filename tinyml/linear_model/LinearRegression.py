@@ -1,14 +1,16 @@
 import numpy as np
 from sklearn import linear_model
+
+
 class LinearRegression:
     def __init__(self):
         self.w=None
         self.n_features=None
-        
-    """
-    w=(X^TX)^{-1}X^Ty
-    """
+
     def fit(self,X,y):
+        """
+        w=(X^TX)^{-1}X^Ty
+        """
         assert isinstance(X,np.ndarray) and isinstance(y,np.ndarray)
         assert X.ndim==2 and y.ndim==1
         assert y.shape[0]==X.shape[0]

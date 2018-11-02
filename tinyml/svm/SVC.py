@@ -25,7 +25,6 @@ class SVC:
         elif kernel=='rbf':
             return np.exp(-(np.sum((x1-x2)**2))/(2*self.sigma*self.sigma))
 
-
     def computeK(self,X,kernel):
         m=X.shape[0]
         K=np.zeros((m,m))

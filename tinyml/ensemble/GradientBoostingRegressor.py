@@ -5,12 +5,12 @@ from sklearn import ensemble
 import copy
 from sklearn import tree
 
-# loss使用均方误差
-# 残差为 y-y_pred
-# 李航《统计学习方法》 p151
-from tinyml.tree.DecisionTreeRegressor import DecisionTreeRegressor
-
-class GBDTRegressor:
+"""
+loss使用均方误差
+残差为 y-y_pred
+李航《统计学习方法》 p151
+"""
+class GradientBoostingRegressor:
     def __init__(self,base_estimator=None,n_estimators=10,lr=0.1):
         self.base_estimator=base_estimator
         self.n_esimators=n_estimators
@@ -35,8 +35,6 @@ class GBDTRegressor:
         return y
 
 
-
-
 if __name__=='__main__':
     breast_data = datasets.load_boston()
     X, y = breast_data.data, breast_data.target
@@ -48,7 +46,7 @@ if __name__=='__main__':
     decisiontree_pred=sklearn_decisiontree_reg.predict(X_test)
     print('base estimator:',mean_squared_error(y_test,decisiontree_pred))
 
-    tinyml_gbdt_reg=GBDTRegressor(n_estimators=500, base_estimator=tree.DecisionTreeRegressor(min_samples_split=15,min_samples_leaf=5,random_state=False))
+    tinyml_gbdt_reg=GradientBoostingRegressor(n_estimators=500, base_estimator=tree.DecisionTreeRegressor(min_samples_split=15, min_samples_leaf=5, random_state=False))
     tinyml_gbdt_reg.fit(X_train, y_train)
     y_pred=tinyml_gbdt_reg.predict(X_test)
     print('tinyml mse:',mean_squared_error(y_test,y_pred))

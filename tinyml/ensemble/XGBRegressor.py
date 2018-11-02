@@ -1,14 +1,9 @@
 import numpy as np
 import abc
-from sklearn import datasets,tree,ensemble
+from sklearn import datasets,tree
 from sklearn.metrics import mean_squared_error
 import xgboost as xgb
 np.random.seed(1)
-
-# 使用MSELoss
-# 不考虑缺失值
-# 只考虑连续值
-# 参考 陈天奇 xgboost slides实现
 
 class LossBase(object):
     def __init__(self,y_target,y_pred):
@@ -89,14 +84,12 @@ class CART:
 
     def TreeGenerate(self, D, A,g,h,indices,depth):
         X = D['X']
-        y = D['y']
         if depth>self.max_depth:
             G=np.sum(g[indices])
             H=np.sum(h[indices])
             w=-(G/(H+self.reg_lambda))
             self.obj_val+=(G**2/(H+self.reg_lambda))
             self.leaf_nodes+=1
-            #print('w:',w)
             return w
         split_j=None
         split_s=None
@@ -115,8 +108,6 @@ class CART:
                     continue
                 left_indices=indices[tmp_left]
                 right_indices=indices[tmp_right]
-                #print('left_indices:',left_indices)
-                #print('right_indices:',right_indices)
                 G_L=np.sum(g[left_indices])
                 G_R=np.sum(g[right_indices])
                 H_L=np.sum(h[left_indices])
@@ -144,7 +135,10 @@ class CART:
         tree[split_j]['val']= -(np.sum(g[indices]) / (np.sum(h[indices]) + self.reg_lambda))
         return tree
 
-
+"""
+使用MSELoss
+按照陈天奇的xgboost PPT实现
+"""
 class XGBRegressor:
     def __init__(self, reg_lambda=1, gamma=0., max_depth=5, n_estimators=250, eta=.1):
         self.reg_lambda=reg_lambda
@@ -157,7 +151,6 @@ class XGBRegressor:
 
     def fit(self,X,y):
         self.mean=np.mean(y)
-        #self.mean=0
         y_pred = np.ones_like(y)*self.mean
         loss = MSELoss(y, y_pred)
         g, h = loss.g(), loss.h()
@@ -165,13 +158,9 @@ class XGBRegressor:
             estimator_t=CART(self.reg_lambda, self.gamma, self.max_depth)
             y_target=y-y_pred
             estimator_t.fit(X,y_target,g,h)
-            # print(estimator_t.tree)
-            # print('leaf_nodes:',estimator_t.leaf_nodes)
-            # print('obj_val:',estimator_t.obj_val)
             self.estimators_.append(estimator_t)
             y_pred+=(self.eta*estimator_t.predict(X))
             loss=MSELoss(y,y_pred)
-            # print('t:',t,' loss:',np.mean(loss.forward()))
             g,h=loss.g(),loss.h()
 
     def predict(self,X):

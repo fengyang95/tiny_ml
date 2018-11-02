@@ -9,5 +9,5 @@
 5、**NaiveBayesClassifier**  
 6、**KMeans**、**LVQ**、**GaussianMixture**、**DBSCAN**、**AGNES**  
 7、**MDS**、**PCA**、**KernelPCA**、**LLE**、**Isomap**  
-8、**AdaBoostClassifier**、**GBDTRegressor**、**RandomForestRegressor**、
+8、**AdaBoostClassifier**、**GradientBoostingRegressor**、**RandomForestRegressor**、
 **XGBRegressor**

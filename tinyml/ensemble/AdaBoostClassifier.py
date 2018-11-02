@@ -1,11 +1,12 @@
-# 只针对2分类
-# 自己实现的DecisionTreeClassifier没有实现 sample_weight参数
-# 重点在AdaBoost， 使用sklearn的DecisionTreeClassifier作为基学习器
+"""
+只针对2分类
+自己实现的DecisionTreeClassifier没有实现 sample_weight参数
+重点在AdaBoost， 使用sklearn的DecisionTreeClassifier作为基学习器
+"""
 import numpy as np
 import copy
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import AdaBoostClassifier as sklearnAdaBoostClassifier
-from sklearn.linear_model import LogisticRegression
 import sklearn.datasets as datasets
 
 class AdaBoostClassifier:
@@ -70,8 +71,6 @@ if __name__ == '__main__':
     print('tinyml:')
     adaboost_clf = AdaBoostClassifier(n_estimators=100,base_estimator=base_estimator,method='re-weighting')
     adaboost_clf.fit(X_train, y_train)
-    #print('alpha:', adaboost_clf.alphas_)
-    #print('epsilon:', adaboost_clf.epsilons_)
     y_pred = adaboost_clf.predict(X_test)
     print('adaboost y_pred:', len(y_test[y_pred == y_test]) * 1. / len(y_test))
 
@@ -79,8 +78,6 @@ if __name__ == '__main__':
     sklearn_adboost_clf = sklearnAdaBoostClassifier(n_estimators=100, random_state=False, algorithm='SAMME',
                                                     base_estimator=base_estimator)
     sklearn_adboost_clf.fit(X_train, y_train)
-    #print('alpha:', sklearn_adboost_clf.estimator_weights_)
-    #print('epsilon:', sklearn_adboost_clf.estimator_errors_)
     sklearn_y_pred = sklearn_adboost_clf.predict(X_test)
     print('sklearn adaboost y_pred:', len(y_test[y_test == sklearn_y_pred]) * 1. / len(y_test))
 

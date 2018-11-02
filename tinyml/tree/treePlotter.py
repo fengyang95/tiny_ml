@@ -1,6 +1,10 @@
 import matplotlib.pyplot as plt
 from pylab import mpl
 
+"""
+《Machine Learning in Action》一书中可视化决策树的代码
+"""
+
 mpl.rcParams['font.sans-serif'] = ['FangSong'] # 指定默认字体
 mpl.rcParams['axes.unicode_minus'] = False # 解决保存图像是负号'-'显示为方块的问题
 decisionNode = dict(boxstyle="sawtooth", fc="0.8")

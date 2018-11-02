@@ -5,8 +5,10 @@ from sklearn.metrics import mean_squared_error
 import sklearn.tree as tree
 import graphviz
 
-# 《统计学习方法》 p69 最小二乘回归树
 class DecisionTreeRegressor:
+    """
+    《统计学习方法》 p69 最小二乘回归树
+    """
     def __init__(self, min_samples_split=3,min_samples_leaf=1,random_state=False):
         self.min_samples_split=min_samples_split
         self.min_samples_leaf=min_samples_leaf
@@ -94,7 +96,7 @@ if __name__=='__main__':
     decisiontree_reg=DecisionTreeRegressor(min_samples_split=20,min_samples_leaf=5)
     decisiontree_reg.fit(X_train,y_train)
     print(decisiontree_reg.tree)
-    #treePlotter.createPlot(decisiontree_reg.tree)
+    treePlotter.createPlot(decisiontree_reg.tree)
     y_pred=decisiontree_reg.predict(X_test)
     print('tinyml mse:',mean_squared_error(y_test,y_pred))
 
