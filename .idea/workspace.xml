@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="464edce4-ba5b-4e33-97d9-e0b8f86036ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tinyml/discriminant_analysis/GDA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -136,11 +135,13 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="boston" value="1" />
+          <entry key="md" value="1" />
           <entry key="py" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Python" value="15" />
         </counts>
@@ -148,13 +149,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="40" />
-          <entry key="md" value="56" />
+          <entry key="md" value="116" />
           <entry key="py" value="8973" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="56" />
+          <entry key="Markdown" value="116" />
           <entry key="PLAIN_TEXT" value="40" />
           <entry key="Python" value="8973" />
         </counts>
@@ -163,18 +164,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tinyml/linear_model/LinearRegression.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="18" selection-start-line="16" selection-start-column="8" selection-end-line="19" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tinyml/discriminant_analysis/LDA.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -230,7 +219,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tinyml/discriminant_analysis/GDA.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="986">
@@ -240,6 +229,18 @@
                 <marker date="1541684275221" expanded="true" signature="341:809" ph="..." />
                 <marker date="1541684275221" expanded="true" signature="1325:1362" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="17">
+                <caret line="1" column="59" selection-start-line="1" selection-start-column="59" selection-end-line="1" selection-end-column="59" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -317,7 +318,6 @@
         <option value="$PROJECT_DIR$/tinyml/linear_model/SGDRegressor.py" />
         <option value="$PROJECT_DIR$/tinyml/ensemble/GBDTRegressor.py" />
         <option value="$PROJECT_DIR$/tinyml/ensemble/GradientBoostRegressor.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/tinyml/tree/DecisionTreeClassifier.py" />
         <option value="$PROJECT_DIR$/tinyml/tree/DecisionTreeRegressor.py" />
         <option value="$PROJECT_DIR$/tinyml/tree/treePlotter.py" />
@@ -331,6 +331,7 @@
         <option value="$PROJECT_DIR$/tinyml/linear_model/LocalWeightedLinearRegression.py" />
         <option value="$PROJECT_DIR$/tinyml/linear_model/LocallyWeightedLinearRegression.py" />
         <option value="$PROJECT_DIR$/tinyml/discriminant_analysis/GDA.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -370,6 +371,12 @@
               <item name="tiny_ml" type="462c0819:PsiDirectoryNode" />
               <item name="tinyml" type="462c0819:PsiDirectoryNode" />
               <item name="discriminant_analysis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tiny_ml" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tiny_ml" type="462c0819:PsiDirectoryNode" />
+              <item name="tinyml" type="462c0819:PsiDirectoryNode" />
+              <item name="linear_model" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -555,12 +562,12 @@
     <frame x="1975" y="-4" width="1865" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.68162394" visible="true" weight="0.17718047" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.68162394" visible="true" weight="0.17718047" />
       <window_info id="Structure" order="1" sideWeight="0.31769723" side_tool="true" weight="0.19186047" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27471384" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27471384" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.31113425" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -576,7 +583,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info anchor="right" id="SciView" order="4" visible="true" weight="0.39221063" />
+      <window_info anchor="right" id="SciView" order="4" visible="true" weight="0.0" />
       <window_info anchor="right" id="Database" order="5" />
     </layout>
   </component>
@@ -642,16 +649,6 @@
     <entry file="file://D:/Anaconda/Lib/site-packages/xgboost/sklearn.py" />
     <entry file="file://D:/Anaconda/Lib/site-packages/xgboost/compat.py" />
     <entry file="file://D:/Anaconda/Lib/site-packages/sklearn/base.py" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="209">
-            <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tinyml/cluster/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -835,6 +832,16 @@
             <marker date="1541684275221" expanded="true" signature="341:809" ph="..." />
             <marker date="1541684275221" expanded="true" signature="1325:1362" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="17">
+            <caret line="1" column="59" selection-start-line="1" selection-start-column="59" selection-end-line="1" selection-end-column="59" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
