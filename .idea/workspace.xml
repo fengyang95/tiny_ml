@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="464edce4-ba5b-4e33-97d9-e0b8f86036ff" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tinyml/discriminant_analysis/GDA.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tinyml/linear_model/LocallyWeightedLinearRegression.py" beforeDir="false" afterPath="$PROJECT_DIR$/tinyml/linear_model/LocallyWeightedLinearRegression.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,13 +27,14 @@
     <SUITE FILE_PATH="coverage/tiny_ml$LinearRegression.coverage" NAME="LinearRegression Coverage Results" MODIFIED="1540086203852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/linear_model" />
     <SUITE FILE_PATH="coverage/tiny_ml$DecisionTreeRegressor.coverage" NAME="DecisionTreeRegressor Coverage Results" MODIFIED="1541148180899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/tree" />
     <SUITE FILE_PATH="coverage/tiny_ml$pytest_in_t_py.coverage" NAME="pytest in t.py Coverage Results" MODIFIED="1540107533876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/dimension_reduction" />
-    <SUITE FILE_PATH="coverage/tiny_ml$LDA.coverage" NAME="LDA Coverage Results" MODIFIED="1540050268419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/discriminant_analysis" />
+    <SUITE FILE_PATH="coverage/tiny_ml$LDA.coverage" NAME="LDA Coverage Results" MODIFIED="1541684313217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/discriminant_analysis" />
     <SUITE FILE_PATH="coverage/tiny_ml$SVC.coverage" NAME="SVC Coverage Results" MODIFIED="1540086225348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/svm" />
     <SUITE FILE_PATH="coverage/tiny_ml$DBSCAN.coverage" NAME="DBSCAN Coverage Results" MODIFIED="1541146862627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/cluster" />
     <SUITE FILE_PATH="coverage/tiny_ml$svm.coverage" NAME="svm Coverage Results" MODIFIED="1539863637119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/svm" />
     <SUITE FILE_PATH="coverage/tiny_ml$LocallyWeightedLinearRegression.coverage" NAME="LocallyWeightedLinearRegression Coverage Results" MODIFIED="1541654168436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/linear_model" />
     <SUITE FILE_PATH="coverage/tiny_ml$XGBRegressor.coverage" NAME="XGBRegressor Coverage Results" MODIFIED="1541148612771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/ensemble" />
-    <SUITE FILE_PATH="coverage/tiny_ml$LogisticRegression.coverage" NAME="LogisticRegression Coverage Results" MODIFIED="1540086213243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/linear_model" />
+    <SUITE FILE_PATH="coverage/tiny_ml$LogisticRegression.coverage" NAME="LogisticRegression Coverage Results" MODIFIED="1541654287407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/linear_model" />
+    <SUITE FILE_PATH="coverage/tiny_ml$GDA.coverage" NAME="GDA Coverage Results" MODIFIED="1541684329835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/discriminant_analysis" />
     <SUITE FILE_PATH="coverage/tiny_ml$DecisionTreeClassifier.coverage" NAME="DecisionTreeClassifier Coverage Results" MODIFIED="1541148105583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/tree" />
     <SUITE FILE_PATH="coverage/tiny_ml$PCA.coverage" NAME="PCA Coverage Results" MODIFIED="1540132479988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/dimension_reduction" />
     <SUITE FILE_PATH="coverage/tiny_ml$AGNES.coverage" NAME="AGNES Coverage Results" MODIFIED="1540086239841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/cluster" />
@@ -126,35 +127,36 @@
     <session id="1449447338">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="boston" value="1" />
-          <entry key="py" value="13" />
+          <entry key="py" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="13" />
+          <entry key="Python" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="40" />
           <entry key="md" value="56" />
-          <entry key="py" value="7860" />
+          <entry key="py" value="8973" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="56" />
           <entry key="PLAIN_TEXT" value="40" />
-          <entry key="Python" value="7860" />
+          <entry key="Python" value="8973" />
         </counts>
       </usages-collector>
     </session>
@@ -162,19 +164,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/LLE.py">
+        <entry file="file://$PROJECT_DIR$/tinyml/linear_model/LinearRegression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="13" column="18" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/MDS.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+            <state relative-caret-position="306">
+              <caret line="18" column="18" selection-start-line="16" selection-start-column="8" selection-end-line="19" selection-end-column="24" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -183,12 +176,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tinyml/linear_model/LinearRegression.py">
+        <entry file="file://$PROJECT_DIR$/tinyml/discriminant_analysis/LDA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="18" column="18" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="19" selection-end-column="24" />
+            <state relative-caret-position="374">
+              <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -197,17 +190,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/sklearn/linear_model/base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="813">
+            <state relative-caret-position="2550">
               <caret line="172" column="4" selection-start-line="172" selection-start-column="4" selection-end-line="172" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tinyml/linear_model/LocallyWeightedLinearRegression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="39" column="34" lean-forward="true" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+            <state relative-caret-position="663">
+              <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
                 <marker date="1541654168378" expanded="true" signature="202:207" ph="..." />
@@ -219,7 +212,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/matplotlib/pyplot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="764">
+            <state relative-caret-position="55998">
               <caret line="3345" column="4" selection-start-line="3345" selection-start-column="4" selection-end-line="3345" selection-end-column="4" />
             </state>
           </provider>
@@ -228,10 +221,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tinyml/linear_model/LogisticRegression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+            <state relative-caret-position="612">
+              <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tinyml/discriminant_analysis/GDA.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="986">
+              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+              <folding>
+                <marker date="1541684275221" expanded="true" signature="169:170" ph="..." />
+                <marker date="1541684275221" expanded="true" signature="341:809" ph="..." />
+                <marker date="1541684275221" expanded="true" signature="1325:1362" ph="..." />
               </folding>
             </state>
           </provider>
@@ -245,7 +252,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tinyml/ensemble/GradientBoostingRegressor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
+            <state relative-caret-position="612">
               <caret line="36" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -257,7 +264,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tinyml/ensemble/RandomForestRegressor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
+            <state relative-caret-position="663">
               <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -323,6 +330,7 @@
         <option value="$PROJECT_DIR$/tinyml/ensemble/XGBRegressor.py" />
         <option value="$PROJECT_DIR$/tinyml/linear_model/LocalWeightedLinearRegression.py" />
         <option value="$PROJECT_DIR$/tinyml/linear_model/LocallyWeightedLinearRegression.py" />
+        <option value="$PROJECT_DIR$/tinyml/discriminant_analysis/GDA.py" />
       </list>
     </option>
   </component>
@@ -344,6 +352,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -360,13 +369,12 @@
               <item name="tiny_ml" type="b2602c69:ProjectViewProjectNode" />
               <item name="tiny_ml" type="462c0819:PsiDirectoryNode" />
               <item name="tinyml" type="462c0819:PsiDirectoryNode" />
-              <item name="linear_model" type="462c0819:PsiDirectoryNode" />
+              <item name="discriminant_analysis" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -394,8 +402,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.LocallyWeightedLinearRegression">
-    <configuration name="AdaBoostClassifier" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.GDA">
+    <configuration name="GDA" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tiny_ml" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -403,12 +411,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tinyml/ensemble" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tinyml/discriminant_analysis" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tinyml/ensemble/AdaBoostClassifier.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tinyml/discriminant_analysis/GDA.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -417,7 +425,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="GradientBoostingRegressor" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="LDA" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tiny_ml" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -425,12 +433,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tinyml/ensemble" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tinyml/discriminant_analysis" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tinyml/ensemble/GradientBoostingRegressor.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tinyml/discriminant_analysis/LDA.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -461,7 +469,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="RandomForestRegressor" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="LogisticRegression" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tiny_ml" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -469,12 +477,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tinyml/ensemble" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tinyml/linear_model" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tinyml/ensemble/RandomForestRegressor.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tinyml/linear_model/LogisticRegression.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -506,19 +514,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.AdaBoostClassifier" />
-      <item itemvalue="Python.GradientBoostingRegressor" />
-      <item itemvalue="Python.RandomForestRegressor" />
       <item itemvalue="Python.XGBRegressor" />
       <item itemvalue="Python.LocallyWeightedLinearRegression" />
+      <item itemvalue="Python.LogisticRegression" />
+      <item itemvalue="Python.GDA" />
+      <item itemvalue="Python.LDA" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.GDA" />
+        <item itemvalue="Python.LDA" />
+        <item itemvalue="Python.LogisticRegression" />
         <item itemvalue="Python.LocallyWeightedLinearRegression" />
         <item itemvalue="Python.XGBRegressor" />
-        <item itemvalue="Python.RandomForestRegressor" />
-        <item itemvalue="Python.GradientBoostingRegressor" />
-        <item itemvalue="Python.AdaBoostClassifier" />
       </list>
     </recent_temporary>
   </component>
@@ -547,13 +555,13 @@
     <frame x="1975" y="-4" width="1865" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.68162394" visible="true" weight="0.17553483" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.68162394" visible="true" weight="0.17718047" />
       <window_info id="Structure" order="1" sideWeight="0.31769723" side_tool="true" weight="0.19186047" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27471384" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3986111" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27471384" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.31113425" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -568,7 +576,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info active="true" anchor="right" id="SciView" order="4" visible="true" weight="0.39221063" />
+      <window_info anchor="right" id="SciView" order="4" visible="true" weight="0.39221063" />
       <window_info anchor="right" id="Database" order="5" />
     </layout>
   </component>
@@ -579,7 +587,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Anaconda/Lib/site-packages/sklearn/decomposition/kernel_pca.py" />
     <entry file="file://D:/Anaconda/Lib/site-packages/sklearn/manifold/locally_linear.py" />
     <entry file="file://D:/Anaconda/Lib/site-packages/sklearn/neighbors/unsupervised.py" />
     <entry file="file://D:/Anaconda/Lib/site-packages/numpy/linalg/linalg.py" />
@@ -711,18 +718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1292">
           <caret line="80" column="18" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tinyml/discriminant_analysis/LDA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -743,12 +738,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/MDS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tinyml/linear_model/LinearRegression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="18" selection-start-line="16" selection-start-column="8" selection-end-line="19" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/sklearn/linear_model/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2550">
+          <caret line="172" column="4" selection-start-line="172" selection-start-column="4" selection-end-line="172" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tinyml/linear_model/LocallyWeightedLinearRegression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1541654168378" expanded="true" signature="202:207" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55998">
+          <caret line="3345" column="4" selection-start-line="3345" selection-start-column="4" selection-end-line="3345" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/tinyml/ensemble/GradientBoostingRegressor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
+        <state relative-caret-position="612">
           <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -758,7 +798,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tinyml/ensemble/RandomForestRegressor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
+        <state relative-caret-position="663">
           <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -766,57 +806,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tinyml/dimension_reduction/MDS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/sklearn/linear_model/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="813">
-          <caret line="172" column="4" selection-start-line="172" selection-start-column="4" selection-end-line="172" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tinyml/linear_model/LogisticRegression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+        <state relative-caret-position="612">
+          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tinyml/linear_model/LinearRegression.py">
+    <entry file="file://$PROJECT_DIR$/tinyml/discriminant_analysis/LDA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="18" column="18" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="19" selection-end-column="24" />
+        <state relative-caret-position="374">
+          <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/matplotlib/pyplot.py">
+    <entry file="file://$PROJECT_DIR$/tinyml/discriminant_analysis/GDA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="764">
-          <caret line="3345" column="4" selection-start-line="3345" selection-start-column="4" selection-end-line="3345" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tinyml/linear_model/LocallyWeightedLinearRegression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="39" column="34" lean-forward="true" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+        <state relative-caret-position="986">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1541654168378" expanded="true" signature="202:207" ph="..." />
+            <marker date="1541684275221" expanded="true" signature="169:170" ph="..." />
+            <marker date="1541684275221" expanded="true" signature="341:809" ph="..." />
+            <marker date="1541684275221" expanded="true" signature="1325:1362" ph="..." />
           </folding>
         </state>
       </provider>
