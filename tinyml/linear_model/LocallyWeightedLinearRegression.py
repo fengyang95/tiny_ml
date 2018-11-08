@@ -19,18 +19,25 @@ class LocallyWeightedLinearRegression:
         self.checkpoint_x=checkpoint_x
         weight=np.zeros((m,))
         for i in range(m):
-            weight[i]=np.exp(-(X[i]-checkpoint_x).dot((X[i]-checkpoint_x).T)/(2*self.tau**2))
+            weight[i]=np.exp(-(X[i]-checkpoint_x).dot((X[i]-checkpoint_x).T)/(2*(self.tau**2)))
         weight_matrix=np.diag(weight)
         self.w=np.linalg.inv(X.T.dot(weight_matrix).dot(X)).dot(X.T).dot(weight_matrix).dot(y)
-        return X.dot(self.w)
+        return checkpoint_x.dot(self.w)
+
+    def fit_transform(self,X,y,checkArray):
+        m=len(y)
+        preds=[]
+        for i in range(m):
+            preds.append(self.fit_predict(X,y,checkArray[i]))
+        return np.array(preds)
 
 
 if __name__=='__main__':
     X=np.linspace(0,30,100)
     y=X**2+2
     X=X.reshape(-1,1)
-    lr=LocallyWeightedLinearRegression(tau=0.5)
-    y_pred=lr.fit_predict(X,y,X[70])
+    lr=LocallyWeightedLinearRegression(tau=5)
+    y_pred=lr.fit_transform(X,y,X)
     plt.plot(X,y,label='gt')
     plt.plot(X,y_pred,label='pred')
     plt.legend()

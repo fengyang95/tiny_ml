@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="464edce4-ba5b-4e33-97d9-e0b8f86036ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tinyml/linear_model/LocallyWeightedLinearRegression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tiny_ml.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tiny_ml.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tinyml/linear_model/LocallyWeightedLinearRegression.py" beforeDir="false" afterPath="$PROJECT_DIR$/tinyml/linear_model/LocallyWeightedLinearRegression.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +31,7 @@
     <SUITE FILE_PATH="coverage/tiny_ml$SVC.coverage" NAME="SVC Coverage Results" MODIFIED="1540086225348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/svm" />
     <SUITE FILE_PATH="coverage/tiny_ml$DBSCAN.coverage" NAME="DBSCAN Coverage Results" MODIFIED="1541146862627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/cluster" />
     <SUITE FILE_PATH="coverage/tiny_ml$svm.coverage" NAME="svm Coverage Results" MODIFIED="1539863637119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/svm" />
-    <SUITE FILE_PATH="coverage/tiny_ml$LocallyWeightedLinearRegression.coverage" NAME="LocallyWeightedLinearRegression Coverage Results" MODIFIED="1541648513319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/linear_model" />
+    <SUITE FILE_PATH="coverage/tiny_ml$LocallyWeightedLinearRegression.coverage" NAME="LocallyWeightedLinearRegression Coverage Results" MODIFIED="1541654168436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/linear_model" />
     <SUITE FILE_PATH="coverage/tiny_ml$XGBRegressor.coverage" NAME="XGBRegressor Coverage Results" MODIFIED="1541148612771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/ensemble" />
     <SUITE FILE_PATH="coverage/tiny_ml$LogisticRegression.coverage" NAME="LogisticRegression Coverage Results" MODIFIED="1540086213243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/linear_model" />
     <SUITE FILE_PATH="coverage/tiny_ml$DecisionTreeClassifier.coverage" NAME="DecisionTreeClassifier Coverage Results" MODIFIED="1541148105583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/tree" />
@@ -149,14 +147,14 @@
         <counts>
           <entry key="dummy" value="40" />
           <entry key="md" value="56" />
-          <entry key="py" value="7369" />
+          <entry key="py" value="7860" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="56" />
           <entry key="PLAIN_TEXT" value="40" />
-          <entry key="Python" value="7369" />
+          <entry key="Python" value="7860" />
         </counts>
       </usages-collector>
     </session>
@@ -208,11 +206,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tinyml/linear_model/LocallyWeightedLinearRegression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="429">
+              <caret line="39" column="34" lean-forward="true" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <marker date="1541648513275" expanded="true" signature="202:207" ph="..." />
+                <marker date="1541654168378" expanded="true" signature="202:207" ph="..." />
               </folding>
             </state>
           </provider>
@@ -554,7 +552,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33714882" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27471384" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3986111" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -814,11 +812,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tinyml/linear_model/LocallyWeightedLinearRegression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="429">
+          <caret line="39" column="34" lean-forward="true" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1541648513275" expanded="true" signature="202:207" ph="..." />
+            <marker date="1541654168378" expanded="true" signature="202:207" ph="..." />
           </folding>
         </state>
       </provider>
