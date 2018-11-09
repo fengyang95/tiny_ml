@@ -1,7 +1,9 @@
 import numpy as np
 from sklearn import linear_model
-np.random.seed(1)
-
+from sklearn.datasets import load_breast_cancer
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import MinMaxScaler
+np.random.seed(42)
 
 class LogisticRegression:
     def __init__(self,max_iter=100):
@@ -68,24 +70,28 @@ class LogisticRegression:
 
 
 if __name__=='__main__':
-    X = np.array([[1.0, 0.5, 0.5], [1.0, 1.0, 0.3], [-0.1, 1.2, 0.5], [1.5, 2.4, 3.2], [1.3, 0.2, 1.4]])
-    y = np.array([1, 0, 0, 1, 1])
-    lr = LogisticRegression()
-    lr.fit(X, y)
-    X_test = np.array([[1.3, 1, 3.2], [-1.2, 1.2, 0.8],[1,2,0.4],[1.2,0.23,-0.5]])
-    print(lr.beta)
-    p=lr.predict_proba(X_test)
-    print(p)
-    y_pre = lr.predict(X_test)
-    print(y_pre)
+    breast_data = load_breast_cancer()
+    X, y = breast_data.data[:,:2], breast_data.target
+    X = MinMaxScaler().fit_transform(X)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+    tinyml_logisticreg = LogisticRegression(max_iter=1000)
+    tinyml_logisticreg.fit(X_train, y_train)
+    lda_prob = tinyml_logisticreg.predict_proba(X_test)
+    lda_pred = tinyml_logisticreg.predict(X_test)
+    # print('tinyml logistic_prob:', lda_prob)
+    # print('tinyml logistic_pred:', lda_pred)
+    print('tinyml accuracy:', len(y_test[y_test == lda_pred]) * 1. / len(y_test))
+
+    sklearn_logsticreg = linear_model.LogisticRegression(max_iter=100,solver='newton-cg')
+    sklearn_logsticreg.fit(X_train, y_train)
+    sklearn_prob = sklearn_logsticreg.predict_proba(X_test)
+    sklearn_pred = sklearn_logsticreg.predict(X_test)
+    # print('sklearn prob:',sklearn_prob)
+    # print('sklearn pred:',sklearn_pred)
+    print('sklearn accuracy:', len(y_test[y_test == sklearn_pred]) * 1. / len(y_test))
 
 
-    sklearn_logist=linear_model.LogisticRegression(max_iter=100,solver='newton-cg')
-    sklearn_logist.fit(X,y)
-    print(sklearn_logist.intercept_)
-    print(sklearn_logist.coef_)
-    sklearn_y_pre=sklearn_logist.predict(X_test)
-    print(sklearn_y_pre)
+
 
 
 

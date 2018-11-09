@@ -1,5 +1,8 @@
 from sklearn import discriminant_analysis
 import numpy as np
+from sklearn.datasets import load_breast_cancer
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import MinMaxScaler
 
 class LDA:
     def __init__(self):
@@ -46,21 +49,24 @@ class LDA:
 
 
 if __name__=='__main__':
+    np.random.seed(42)
+    breast_data = load_breast_cancer()
+    X, y = breast_data.data, breast_data.target
+    X = MinMaxScaler().fit_transform(X)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+    lda = LDA()
+    lda.fit(X_train, y_train)
+    lda_prob = lda.predict_proba(X_test)
+    lda_pred = lda.predict(X_test)
+    #print('tinyml lda_prob:', lda_prob)
+    #print('tinyml lda_pred:', lda_pred)
+    print('tinyml accuracy:', len(y_test[y_test == lda_pred]) * 1. / len(y_test))
 
-    X = np.array([[1.0, 0.5, 0.5], [1.0, 1.0, 0.3], [-0.1, 1.2, 0.5], [1.5, 2.4, 3.2], [1.3, 0.2, 1.4]])
-    y = np.array([1, 0, 0, 1, 1])
-    X_test = np.array([[1.3, 1, 3.2], [-1.2, 1.2, 0.8], [1, 2, 0.4], [1.2, 0.23, -0.5]])
-
-    lda=LDA()
-    lda.fit(X,y)
-    lda_prob=lda.predict_proba(X_test)
-    lda_pred=lda.predict(X_test)
-    print('lda_prob:',lda_prob)
-    print('lda_pred:',lda_pred)
 
     sklearn_lda = discriminant_analysis.LinearDiscriminantAnalysis()
-    sklearn_lda.fit(X,y)
+    sklearn_lda.fit(X_train,y_train)
     sklearn_prob=sklearn_lda.predict_proba(X_test)
     sklearn_pred=sklearn_lda.predict(X_test)
-    print('sklearn prob:',sklearn_prob)
-    print('sklearn pred:',sklearn_pred)
+    #print('sklearn prob:',sklearn_prob)
+    #print('sklearn pred:',sklearn_pred)
+    print('sklearn accuracy:',len(y_test[y_test==sklearn_pred])*1./len(y_test))
