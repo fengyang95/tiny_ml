@@ -11,3 +11,4 @@
 7、**MDS**、**PCA**、**KernelPCA**、**LLE**、**Isomap**  
 8、**AdaBoostClassifier**、**GradientBoostingRegressor**、**RandomForestRegressor**、
 **XGBRegressor**
+9、**ReliefFeatureSelection**
