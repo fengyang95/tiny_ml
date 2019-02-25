@@ -36,7 +36,7 @@ if __name__=='__main__':
     X=np.linspace(0,30,100)
     y=X**2+2
     X=X.reshape(-1,1)
-    lr=LocallyWeightedLinearRegression(tau=5)
+    lr=LocallyWeightedLinearRegression(tau=100)
     y_pred=lr.fit_transform(X,y,X)
     plt.plot(X,y,label='gt')
     plt.plot(X,y_pred,label='pred')

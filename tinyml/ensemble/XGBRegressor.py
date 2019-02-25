@@ -190,4 +190,3 @@ if __name__=='__main__':
     xgb_reg.fit(X_train,y_train)
     xgb_pred=xgb_reg.predict(X_test)
     print('xgb  mse:',mean_squared_error(y_test,xgb_pred))
-

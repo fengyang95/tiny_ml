@@ -103,6 +103,7 @@ if __name__=='__main__':
 
     sklearn_reg=tree.DecisionTreeRegressor(min_samples_split=20,min_samples_leaf=5,random_state=False)
     sklearn_reg.fit(X_train,y_train)
+    print(sklearn_reg.feature_importances_)
     sklearn_pred=sklearn_reg.predict(X_test)
     print('sklearn mse:',mean_squared_error(y_test,sklearn_pred))
     dot_data=tree.export_graphviz(sklearn_reg,out_file=None)

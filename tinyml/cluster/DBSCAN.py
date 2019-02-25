@@ -56,14 +56,16 @@ if __name__=='__main__':
     dbscan.fit(X)
     print('C:',dbscan.C)
     print(dbscan.labels_)
+    plt.figure(12)
+    plt.subplot(121)
     plt.scatter(X[:,0],X[:,1],c=dbscan.labels_)
     plt.title('tinyml')
-    plt.show()
 
     import sklearn.cluster as cluster
     sklearn_DBSCAN=cluster.DBSCAN(eps=0.11,min_samples=5,metric='l2')
     sklearn_DBSCAN.fit(X)
     print(sklearn_DBSCAN.labels_)
+    plt.subplot(122)
     plt.scatter(X[:,0],X[:,1],c=sklearn_DBSCAN.labels_)
     plt.title('sklearn')
     plt.show()
