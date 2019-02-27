@@ -6,10 +6,11 @@ from sklearn.preprocessing import MinMaxScaler
 np.random.seed(42)
 
 class LogisticRegression:
-    def __init__(self,max_iter=100):
+    def __init__(self,max_iter=100,use_matrix=True):
         self.beta=None
         self.n_features=None
         self.max_iter=max_iter
+        self.use_Hessian=use_matrix
 
     def fit(self,X,y):
         n_samples=X.shape[0]
@@ -18,9 +19,16 @@ class LogisticRegression:
         X=np.c_[X,extra]
         self.beta=np.random.random((X.shape[1],))
         for i in range(self.max_iter):
-            dldbeta=self._dldbeta(X,y,self.beta)
-            dldldbetadbeta=self._dldldbetadbeta(X,self.beta)
-            self.beta-=(1./dldldbetadbeta*dldbeta)
+            if self.use_Hessian is not True:
+                dldbeta=self._dldbeta(X,y,self.beta)
+                dldldbetadbeta=self._dldldbetadbeta(X,self.beta)
+                self.beta-=(1./dldldbetadbeta*dldbeta)
+            else:
+                dldbeta = self._dldbeta(X, y, self.beta)
+                dldldbetadbeta = self._dldldbetadbeta_matrix(X, self.beta)
+                self.beta -= (np.linalg.inv(dldldbetadbeta).dot(dldbeta))
+
+
 
     @staticmethod
     def _dldbeta(X,y,beta):
@@ -30,6 +38,16 @@ class LogisticRegression:
         for i in range(m):
             sum+=X[i]*(y[i]-np.exp(X[i].dot(beta))/(1+np.exp(X[i].dot(beta))))
         return -sum
+
+    @staticmethod
+    def _dldldbetadbeta_matrix(X,beta):
+        m=X.shape[0]
+        Hessian=np.zeros((X.shape[1],X.shape[1]))
+        for i in range(m):
+            p1 = np.exp(X[i].dot(beta)) / (1 + np.exp(X[i].dot(beta)))
+            tmp=X[i].reshape((-1,1))
+            Hessian+=tmp.dot(tmp.T)*p1*(1-p1)
+        return Hessian
 
     @staticmethod
     def _dldldbetadbeta(X,beta):
@@ -59,10 +77,10 @@ class LogisticRegression:
 
 if __name__=='__main__':
     breast_data = load_breast_cancer()
-    X, y = breast_data.data[:,:2], breast_data.target
+    X, y = breast_data.data[:,:7], breast_data.target
     X = MinMaxScaler().fit_transform(X)
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
-    tinyml_logisticreg = LogisticRegression(max_iter=100)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
+    tinyml_logisticreg = LogisticRegression(max_iter=100,use_matrix=True)
     tinyml_logisticreg.fit(X_train, y_train)
     lda_prob = tinyml_logisticreg.predict_proba(X_test)
     lda_pred = tinyml_logisticreg.predict(X_test)
