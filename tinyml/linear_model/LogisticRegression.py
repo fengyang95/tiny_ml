@@ -4,6 +4,48 @@ from sklearn.datasets import load_breast_cancer
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
 np.random.seed(42)
+import torch
+from torch import nn,optim
+
+
+class SGDLogisticRegression:
+    class LogisticRegressionModel(nn.Module):
+        def __init__(self,n_features):
+            super(SGDLogisticRegression.LogisticRegressionModel,self).__init__()
+            self.linear=nn.Linear(n_features,1)
+            self.sigmoid=nn.Sigmoid()
+
+        def forward(self,X):
+            return self.sigmoid(self.linear(X))
+
+    def __init__(self,max_iter=100000,learning_rate=0.005):
+        self.max_iter=max_iter
+        self.learning_rate=learning_rate
+        self.criterion=nn.BCELoss()
+        self.fitted=False
+
+    def fit(self,X,y):
+        n_feature=X.shape[1]
+        self.model=SGDLogisticRegression.LogisticRegressionModel(n_feature)
+        self.optimizer=optim.SGD(self.model.parameters(),lr=self.learning_rate)
+        X=torch.from_numpy(X.astype(np.float32))
+        y=torch.from_numpy(y.astype(np.float32))
+        for epoch in range(self.max_iter):
+            y_predict=self.model(X)[:,0]
+            loss=self.criterion(y_predict,y)
+            #print('epoch:',epoch,' loss.item():',loss.item())
+            self.optimizer.zero_grad()
+            loss.backward()
+            self.optimizer.step()
+
+    def predict(self,X):
+        X = torch.from_numpy(X.astype(np.float32))
+        with torch.no_grad():
+            y_pred = self.model(X).detach().numpy()
+            y_pred[y_pred>0.5]=1
+            y_pred[y_pred<=0.5]=0
+        return y_pred[:,0]
+
 
 class LogisticRegression:
     def __init__(self,max_iter=100,use_matrix=True):
@@ -95,6 +137,12 @@ if __name__=='__main__':
     # print('sklearn prob:',sklearn_prob)
     # print('sklearn pred:',sklearn_pred)
     print('sklearn accuracy:', len(y_test[y_test == sklearn_pred]) * 1. / len(y_test))
+
+    torch_sgd_logisticreg=SGDLogisticRegression(100000,0.01)
+    torch_sgd_logisticreg.fit(X_train,y_train)
+    torch_pred=torch_sgd_logisticreg.predict(X_test)
+    print('torch accuracy:',len(y_test[y_test==torch_pred])/len(y_test))
+
 
 
 
