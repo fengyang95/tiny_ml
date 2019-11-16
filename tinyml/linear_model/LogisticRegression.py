@@ -127,7 +127,7 @@ if __name__=='__main__':
     lda_prob = tinyml_logisticreg.predict_proba(X_test)
     lda_pred = tinyml_logisticreg.predict(X_test)
     # print('tinyml logistic_prob:', lda_prob)
-    print('tinyml logistic_pred:', lda_pred)
+    # print('tinyml logistic_pred:', lda_pred)
     print('tinyml accuracy:', len(y_test[y_test == lda_pred]) * 1. / len(y_test))
 
     sklearn_logsticreg = linear_model.LogisticRegression(max_iter=100,solver='newton-cg')
@@ -143,7 +143,12 @@ if __name__=='__main__':
     torch_pred=torch_sgd_logisticreg.predict(X_test)
     print('torch accuracy:',len(y_test[y_test==torch_pred])/len(y_test))
 
-
+    # expected output
+    """
+    tinyml accuracy: 0.9590643274853801
+    sklearn accuracy: 0.9298245614035088
+    torch accuracy: 0.9532163742690059
+    """
 
 
 
