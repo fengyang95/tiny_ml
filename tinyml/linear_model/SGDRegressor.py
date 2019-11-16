@@ -78,6 +78,3 @@ if __name__ == '__main__':
     print(sklearn_lr.coef_)
     print(sklearn_lr.intercept_)
 
-
-
-
