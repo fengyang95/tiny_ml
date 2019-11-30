@@ -141,6 +141,31 @@
 <img src="/tinyml/compare/cluster_result/sklearn_AGNES.jpg" height="300px" alt="sklearn AGNES" >
 </div>
 
+- **降维算法比较** [代码](/tinyml/compare/compare_dimension_reduction.py)
+- PCA
+<div align="center">
+<img src="/tinyml/compare/dimension_reduction_result/tinyml_PCA.jpg" height="300px" alt="tinyml PCA" >
+<img src="/tinyml/compare/dimension_reduction_result/sklearn_PCA.jpg" height="300px" alt="sklearn PCA" >
+</div>
+
+- KernalPCA
+<div align="center">
+<img src="/tinyml/compare/dimension_reduction_result/tinyml_KernalPCA.jpg" height="300px" alt="tinyml KernalPCA" >
+<img src="/tinyml/compare/dimension_reduction_result/sklearn_KernalPCA.jpg" height="300px" alt="sklearn KernalPCA" >
+</div>
+
+- LLE
+<div align="center">
+<img src="/tinyml/compare/dimension_reduction_result/tinyml_LLE.jpg" height="300px" alt="tinyml LLE" >
+<img src="/tinyml/compare/dimension_reduction_result/sklearn_LLE.jpg" height="300px" alt="sklearn LLE" >
+</div>
+
+- MDS
+<div align="center">
+<img src="/tinyml/compare/dimension_reduction_result/tinyml_MDS.jpg" height="300px" alt="tinyml MDS" >
+<img src="/tinyml/compare/dimension_reduction_result/sklearn_MDS.jpg" height="300px" alt="sklearn MDS" >
+</div>
+
 
 
 

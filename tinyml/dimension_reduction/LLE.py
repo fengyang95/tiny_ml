@@ -32,7 +32,7 @@ class LLE:
 
     def compute_omega(self,i,X):
         Z=(X[i]-X[self.Q[i]]).dot((X[i]-X[self.Q[i]]).T)
-        Z += self.reg * np.trace(Z) * np.identity(self.k)
+        Z+= self.reg * np.trace(Z) * np.identity(self.k)
         Ik=np.ones((self.k,))
         Zinv=np.linalg.inv(Z)
         self.Omega[i, self.Q[i]]=np.matmul(Zinv,Ik)/(Ik.T.dot(Zinv).dot(Ik))
