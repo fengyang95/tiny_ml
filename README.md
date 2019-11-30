@@ -3,39 +3,39 @@
 如 按照陈天奇的slides实现的XGBRegressor。
 ## 已经实现的算法
 - **线性模型**  
--[x] [LinearRegression](/tinyml/linear_model/LinearRegression.py)    [线性回归闭式解推导](notes/linear_model/linear_reg_closed_form.pdf)  
--[x] [LogisticRegression](/tinyml/linear_model/LogisticRegression.py)  [逻辑回归相关推导](/notes/linear_model/logistic_regression.pdf)  
--[x] [SGDRegressor](/tinyml/linear_model/SGDRegressor.py)  
--[x] [LocallyWeightedLinearRegression](/tinyml/linear_model/LocallyWeightedLinearRegression.py)    
+- [LinearRegression](/tinyml/linear_model/LinearRegression.py)    [线性回归闭式解推导](notes/linear_model/linear_reg_closed_form.pdf)  
+- [LogisticRegression](/tinyml/linear_model/LogisticRegression.py)  [逻辑回归相关推导](/notes/linear_model/logistic_regression.pdf)  
+- [SGDRegressor](/tinyml/linear_model/SGDRegressor.py)  
+- [LocallyWeightedLinearRegression](/tinyml/linear_model/LocallyWeightedLinearRegression.py)    
 - **判别分析**  
--[x] [LDA](/tinyml/discriminant_analysis/LDA.py)  
--[x] [GDA](/tinyml/discriminant_analysis/GDA.py)    
+- [LDA](/tinyml/discriminant_analysis/LDA.py)  
+- [GDA](/tinyml/discriminant_analysis/GDA.py)    
 - **决策回归树**   
--[x] [DecisionTreeClassifier](/tinyml/tree/DecisionTreeClassifier.py)  
--[x] [DecisionTreeRegressor](/tinyml/tree/DecisionTreeRegressor.py)    
+- [DecisionTreeClassifier](/tinyml/tree/DecisionTreeClassifier.py)  
+- [DecisionTreeRegressor](/tinyml/tree/DecisionTreeRegressor.py)    
 - **支持向量机**  
--[x] [SVC](/tinyml/svm/SVC.py)  
+- [SVC](/tinyml/svm/SVC.py)  
 - **贝叶斯**  
--[x] [NaiveBayesClassifier](/tinyml/bayes/NaiveBayesClassifier.py)  
+- [NaiveBayesClassifier](/tinyml/bayes/NaiveBayesClassifier.py)  
 - **聚类算法**
--[x] [KMeans](/tinyml/cluster/KMeans.py)  
--[x] [LVQ](/tinyml/cluster/LVQ.py)  
--[x] [GaussianMixture](/tinyml/cluster/GaussianMixture.py)  
--[x] [DBSCAN](/tinyml/cluster/DBSCAN.py)  
--[x] [AGNES](/tinyml/cluster/AGNES.py)    
+- [KMeans](/tinyml/cluster/KMeans.py)  
+- [LVQ](/tinyml/cluster/LVQ.py)  
+- [GaussianMixture](/tinyml/cluster/GaussianMixture.py)  
+- [DBSCAN](/tinyml/cluster/DBSCAN.py)  
+- [AGNES](/tinyml/cluster/AGNES.py)    
 - **降维算法**  
--[x] [MDS](/tinyml/dimension_reduction/MDS.py)  
--[x] [PCA](/tinyml/dimension_reduction/PCA.py)  
--[x] [KernelPCA](/tinyml/dimension_reduction/KernelPCA.py)  
--[x] [LLE](/tinyml/dimension_reduction/LLE.py)  
--[x] [Isomap](/tinyml/dimension_reduction/Isomap.py)    
+- [MDS](/tinyml/dimension_reduction/MDS.py)  
+- [PCA](/tinyml/dimension_reduction/PCA.py)  
+- [KernelPCA](/tinyml/dimension_reduction/KernelPCA.py)  
+- [LLE](/tinyml/dimension_reduction/LLE.py)  
+- [Isomap](/tinyml/dimension_reduction/Isomap.py)    
 - **集成学习**  
--[x] [AdaBoostClassifier](/tinyml/ensemble/AdaBoostClassifier.py)
--[x] [GradientBoostingRegressor](/tinyml/ensemble/GradientBoostingRegressor.py)  
--[x] [RandomForestRegressor](/tinyml/ensemble/RandomForestRegressor.py)  
--[x] [XGBRegressor](/tinyml/ensemble/XGBRegressor.py)    
+- [AdaBoostClassifier](/tinyml/ensemble/AdaBoostClassifier.py)  
+- [GradientBoostingRegressor](/tinyml/ensemble/GradientBoostingRegressor.py)  
+- [RandomForestRegressor](/tinyml/ensemble/RandomForestRegressor.py)  
+- [XGBRegressor](/tinyml/ensemble/XGBRegressor.py)    
 - **特征选择**  
--[x] [ReliefFeatureSelection](/tinyml/feature_selection/ReliefFeatureSelection.py)  
+- [ReliefFeatureSelection](/tinyml/feature_selection/ReliefFeatureSelection.py)  
 ## 和sklearn实现的比较
 - 回归算法结果 [代码](/tinyml/compare/compare_regresssor.py)
 <table>
@@ -44,7 +44,6 @@
         <td colspan="2">sklearn-boston</td>
     </tr>
     <tr>
-        <td></td>
         <td>tinyml</td>
         <td>sklearn</td>
     </tr>
@@ -83,9 +82,8 @@
 - 分类算法结果 [代码](/tinyml/compare/compare_classification.py)
 <table>
    <tr>
-      <td>Algorithm vs. accuracy</td>
-      <td>sklearn-breast_cancer</td>
-      <td></td>
+       <td rowspan="2">Algorithm vs. RMSE</td>
+       <td colspan="2">sklearn-breast_cancer</td>
    </tr>
    <tr>
       <td></td>
