@@ -40,7 +40,7 @@
 - 回归算法结果 [代码](/tinyml/compare/compare_regresssor.py)
 <table>
     <tr>
-         <td rowspan="2">Algorithm vs. RMSE</td>
+        <td rowspan="2">Algorithm vs. RMSE</td>
         <td colspan="2">sklearn-boston</td>
     </tr>
     <tr>
@@ -86,8 +86,7 @@
        <td colspan="2">sklearn-breast_cancer</td>
    </tr>
    <tr>
-      <td></td>
-      <td>   tinyml</td>
+      <td>tinyml</td>
       <td>sklearn</td>
    </tr>
    <tr>
@@ -115,13 +114,12 @@
       <td>92.40%</td>
       <td>92.40%</td>
    </tr>
-   <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
 </table>
 
-- 聚类算法比较
+- 聚类算法比较 [代码](/tinyml/compare/compare_clustering.py)
+<div align="center">
+<img src="/tinyml/compare/cluster_result/tinyml_KMeans.jpg" height="300px" alt="tinyml KMeans" >
+<img src="/tinyml/compare/cluster_result/sklearn_KMeans.jpg" height="300px" alt="sklearn KMeans" >
+</div>
+
 

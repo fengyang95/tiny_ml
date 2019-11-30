@@ -86,7 +86,7 @@ if __name__=='__main__':
     plt.title('tinyml')
     plt.show()
 
-    """
+
     from sklearn.mixture import GaussianMixture
 
     sklearn_gmm = GaussianMixture(n_components=3, covariance_type='full',
@@ -96,7 +96,7 @@ if __name__=='__main__':
     plt.scatter(X[:,0],X[:,1],c=labels)
     plt.title('sklearn')
     plt.show()
-    """
+
 
 
 

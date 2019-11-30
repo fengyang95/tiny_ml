@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 class AGNES:
-    def __init__(self,k=7,dist_type='AVG'):
+    def __init__(self,k=3,dist_type='AVG'):
         self.k=k
         self.labels_=None
         self.C={}
@@ -30,7 +30,7 @@ class AGNES:
             i_=index//M.shape[1]
             j_=index%M.shape[1]
             self.C[i_]=set(self.C[i_].union(self.C[j_]))
-            print(self.C[i_])
+            #print(self.C[i_])
             for j in range(j_+1,q):
                 self.C[j-1]=set(self.C[j])
             del self.C[q-1]
