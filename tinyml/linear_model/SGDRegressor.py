@@ -46,10 +46,12 @@ class SGDRegressor:
                     elif self.penalty=='l1l2':
                         grad+=(self.alpha*self.l1_ratio*np.sign(self.w)+
                                (1-self.l1_ratio)*self.alpha*self.w)
+
                 self.w=self.w-lr*grad
 
 
     def predict(self, X):
+
         n_samples = X.shape[0]
         extra = np.ones((n_samples,1))
         X = np.c_[X,extra]
