@@ -37,7 +37,7 @@
 - **特征选择**  
 - [ReliefFeatureSelection](/tinyml/feature_selection/ReliefFeatureSelection.py)  
 ## 和sklearn实现的比较
-- 回归算法结果 [代码](/tinyml/compare/compare_regresssor.py)
+- **回归算法结果** [代码](/tinyml/compare/compare_regresssor.py)
 <table>
     <tr>
         <td rowspan="2">Algorithm vs. RMSE</td>
@@ -79,7 +79,7 @@
     </tr>
 </table>
 
-- 分类算法结果 [代码](/tinyml/compare/compare_classification.py)
+- **分类算法结果** [代码](/tinyml/compare/compare_classification.py)
 <table>
    <tr>
        <td rowspan="2">Algorithm vs. RMSE</td>
@@ -116,10 +116,33 @@
    </tr>
 </table>
 
-- 聚类算法比较 [代码](/tinyml/compare/compare_clustering.py)
+- **聚类算法比较** [代码](/tinyml/compare/compare_clustering.py)
+- KMeans
 <div align="center">
 <img src="/tinyml/compare/cluster_result/tinyml_KMeans.jpg" height="300px" alt="tinyml KMeans" >
 <img src="/tinyml/compare/cluster_result/sklearn_KMeans.jpg" height="300px" alt="sklearn KMeans" >
 </div>
+
+- DBSCAN
+<div align="center">
+<img src="/tinyml/compare/cluster_result/tinyml_DBSCAN.jpg" height="300px" alt="tinyml DBSCAN" >
+<img src="/tinyml/compare/cluster_result/sklearn_DBSCAN.jpg" height="300px" alt="sklearn DBSCAN" >
+</div>
+
+- GMM
+<div align="center">
+<img src="/tinyml/compare/cluster_result/tinyml_GMM.jpg" height="300px" alt="tinyml GMM" >
+<img src="/tinyml/compare/cluster_result/sklearn_GMM.jpg" height="300px" alt="sklearn GMM" >
+</div>
+
+- AGNES
+<div align="center">
+<img src="/tinyml/compare/cluster_result/tinyml_AGNES.jpg" height="300px" alt="tinyml AGNES" >
+<img src="/tinyml/compare/cluster_result/sklearn_AGNES.jpg" height="300px" alt="sklearn AGNES" >
+</div>
+
+
+
+
 
 
