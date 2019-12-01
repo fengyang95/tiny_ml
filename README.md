@@ -90,6 +90,11 @@
       <td>sklearn</td>
    </tr>
    <tr>
+      <td>NaiveBayes</td>
+      <td>90.64%</td>
+      <td>90.64%</td>
+   </tr>
+   <tr>
       <td>LogisticRegression</td>
       <td>92.98%</td>
       <td>92.98%</td>

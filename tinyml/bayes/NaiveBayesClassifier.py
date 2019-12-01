@@ -39,7 +39,36 @@ class NaiveBayesClassifier:
                 for j in range(self.n_classes):
                     p[j]*=self.conditional_P[col][val][j]
             pred_y.append(np.argmax(p))
-        return pred_y
+        return np.array(pred_y)
+# 连续值
+class NaiveBayesClassifierContinuous:
+    def __init__(self,n_classes=2):
+        self.n_classes=n_classes
+        self.priori_P={}
+
+    def fit(self,X,y):
+        self.mus=np.zeros((self.n_classes,X.shape[1]))
+        self.sigmas=np.zeros((self.n_classes,X.shape[1]))
+
+        for c in range(self.n_classes):
+            # 公式 7.19
+            self.priori_P[c]=(len(y[y==c]))/(len(y))
+            X_c=X[np.where(y==c)]
+
+            self.mus[c]=np.mean(X_c,axis=0)
+            self.sigmas[c]=np.std(X_c,axis=0)
+
+    def predict(self,X):
+        pred_y=[]
+        for i in range(len(X)):
+            p=np.ones((self.n_classes,))
+            for c in range(self.n_classes):
+                p[c]=self.priori_P[c]
+                for col in range(X.shape[1]):
+                    x=X[i,col]
+                    p[c]*=1./(np.sqrt(2*np.pi)*self.sigmas[c,col])*np.exp(-(x-self.mus[c,col])**2/(2*self.sigmas[c,col]**2))
+            pred_y.append(np.argmax(p))
+        return np.array(pred_y)
 
 if __name__=='__main__':
     X = np.array([[0, 0, 0, 0, 0, 0], [1, 0, 1, 0, 0, 0],

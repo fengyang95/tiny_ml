@@ -13,7 +13,7 @@ from sklearn.preprocessing import StandardScaler,MinMaxScaler
 from sklearn.model_selection import train_test_split
 import sklearn.tree as tree
 
-from tinyml.bayes.NaiveBayesClassifier import NaiveBayesClassifier as tinymlNaiveBayesClassifier
+from tinyml.bayes.NaiveBayesClassifier import NaiveBayesClassifierContinuous as tinymlNaiveBayesClassifier
 from tinyml.discriminant_analysis.LDA import LDA as tinymlLDA
 from tinyml.discriminant_analysis.GDA import GDA as tinymlGDA
 from tinyml.ensemble.AdaBoostClassifier import AdaBoostClassifier as tinymlAdaboostClassifier
@@ -26,6 +26,7 @@ from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as sklearnL
 from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis as sklearnGDA
 from sklearn.linear_model import LogisticRegression as sklearnLogisticRegression
 from sklearn.svm import LinearSVC,SVC
+from sklearn.naive_bayes import GaussianNB as sklearnNaiveBayes
 from sklearn.tree import DecisionTreeClassifier as sklearnDecisionTreeClassifier
 if __name__=='__main__':
 
@@ -42,8 +43,12 @@ if __name__=='__main__':
 
     data= train_X, train_y, test_X, test_y
 
-    #acc_tinyml_naivebayes=train_and_eval(data,tinymlNaiveBayesClassifier(n_classes=n_classes))
-    #print('tinyml accuracy NaiveBayes:',acc_tinyml_naivebayes)
+    acc_tinyml_naivebayes=train_and_eval(data,tinymlNaiveBayesClassifier(n_classes=n_classes))
+    print('tinyml accuracy NaiveBayes:',acc_tinyml_naivebayes)
+    acc_sklearn_naivebayes=train_and_eval(data,sklearnNaiveBayes())
+    print('sklearn accuracy NaiveBayes:',acc_sklearn_naivebayes)
+
+
 
     acc_tinyml_adaboost_classifier=train_and_eval((train_X,(train_y*2-1).astype(np.int),
                                                    test_X,(test_y*2-1).astype(np.int)),tinymlAdaboostClassifier(n_estimators=100,base_estimator=tree.DecisionTreeClassifier(max_depth=1,random_state=False),method='re-weighting'))
