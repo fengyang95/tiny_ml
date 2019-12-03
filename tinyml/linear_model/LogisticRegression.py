@@ -125,6 +125,8 @@ if __name__=='__main__':
     tinyml_logisticreg = LogisticRegression(max_iter=100,use_matrix=True)
     tinyml_logisticreg.fit(X_train, y_train)
     lda_prob = tinyml_logisticreg.predict_proba(X_test)
+
+
     lda_pred = tinyml_logisticreg.predict(X_test)
     # print('tinyml logistic_prob:', lda_prob)
     # print('tinyml logistic_pred:', lda_pred)
@@ -149,6 +151,8 @@ if __name__=='__main__':
     sklearn accuracy: 0.9298245614035088
     torch accuracy: 0.9532163742690059
     """
+
+
 
 
 
