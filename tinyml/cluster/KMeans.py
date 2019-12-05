@@ -9,11 +9,32 @@ class KMeans:
         self.mu=None
         self.k=k
 
+    def init(self,X,method='kmeans++',random_state=False):
+        if method=='kmeans++':
+            if random_state is False:
+                np.random.seed(0)
+            mus=[X[np.random.randint(0,len(X))]]
+            while len(mus)<self.k:
+                Dxs=[]
+                array_mus=np.array(mus)
+                for x in X:
+                    Dx=np.sum(np.sqrt(np.sum((x-array_mus)**2,axis=1)))
+                    Dxs.append(Dx)
+                Dxs=np.array(Dxs)
+                index=np.argmax(Dxs)
+                mus.append(X[index])
+            self.mu=np.array(mus)
+
+
+        elif method=='default':
+            self.mu = X[random.sample(range(X.shape[0]), self.k)]
+
+        else:
+            raise NotImplementedError
+
     # p203图9.2算法流程
     def fit(self,X):
-        self.mu=X[random.sample(range(X.shape[0]),self.k)]
-        # 书上例子
-        self.mu=X[[5,11,23]]
+        self.init(X,'kmeans++')
         while True:
             C={}
             for i in range(self.k):

@@ -79,7 +79,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ReliefFeatureSelection">
+  <component name="RunManager" selected="Python.KMeans">
     <configuration name="KMeans" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tiny_ml" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -124,28 +124,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="PRC" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tiny_ml" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tinyml/metrices" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\repo\tiny_ml\tinyml\metrices\curves.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="ReliefFeatureSelection" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tiny_ml" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -160,6 +138,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tinyml/feature_selection/ReliefFeatureSelection.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SVC" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tiny_ml" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tinyml/svm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tinyml/svm/SVC.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -191,19 +191,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.KMeans" />
       <item itemvalue="Python.LogisticRegression" />
-      <item itemvalue="Python.PRC" />
       <item itemvalue="Python.curves" />
       <item itemvalue="Python.ReliefFeatureSelection" />
+      <item itemvalue="Python.SVC" />
+      <item itemvalue="Python.KMeans" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.KMeans" />
+        <item itemvalue="Python.SVC" />
         <item itemvalue="Python.ReliefFeatureSelection" />
         <item itemvalue="Python.curves" />
         <item itemvalue="Python.LogisticRegression" />
-        <item itemvalue="Python.PRC" />
-        <item itemvalue="Python.KMeans" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +226,7 @@
       <workItem from="1551187298230" duration="4677000" />
       <workItem from="1573876851084" duration="6669000" />
       <workItem from="1575034982793" duration="26999000" />
-      <workItem from="1575275073191" duration="10650000" />
+      <workItem from="1575275073191" duration="15743000" />
     </task>
     <servers />
   </component>
@@ -285,7 +285,7 @@
     <SUITE FILE_PATH="coverage/tiny_ml$XGBRegressor.coverage" NAME="XGBRegressor Coverage Results" MODIFIED="1575082973794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/ensemble" />
     <SUITE FILE_PATH="coverage/tiny_ml$PRC.coverage" NAME="PRC Coverage Results" MODIFIED="1575358773314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/metrices" />
     <SUITE FILE_PATH="coverage/tiny_ml$compare_dimension_reduction.coverage" NAME="compare_dimension_reduction Coverage Results" MODIFIED="1575103020022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/compare" />
-    <SUITE FILE_PATH="coverage/tiny_ml$KMeans.coverage" NAME="KMeans Coverage Results" MODIFIED="1575353483182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/cluster" />
+    <SUITE FILE_PATH="coverage/tiny_ml$KMeans.coverage" NAME="KMeans Coverage Results" MODIFIED="1575516028818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/cluster" />
     <SUITE FILE_PATH="coverage/tiny_ml$Isomap.coverage" NAME="Isomap Coverage Results" MODIFIED="1575102507801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/dimension_reduction" />
     <SUITE FILE_PATH="coverage/tiny_ml$GaussianMixture.coverage" NAME="GaussianMixture Coverage Results" MODIFIED="1575099355110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/cluster" />
     <SUITE FILE_PATH="coverage/tiny_ml$DecisionTreeClassifier.coverage" NAME="DecisionTreeClassifier Coverage Results" MODIFIED="1575089818558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/tree" />
@@ -296,6 +296,6 @@
     <SUITE FILE_PATH="coverage/tiny_ml$LVQ.coverage" NAME="LVQ Coverage Results" MODIFIED="1575098158157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/cluster" />
     <SUITE FILE_PATH="coverage/tiny_ml$RandomForestRegressor.coverage" NAME="RandomForestRegressor Coverage Results" MODIFIED="1575081334261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/ensemble" />
     <SUITE FILE_PATH="coverage/tiny_ml$GDA.coverage" NAME="GDA Coverage Results" MODIFIED="1575088099159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/discriminant_analysis" />
-    <SUITE FILE_PATH="coverage/tiny_ml$SVC.coverage" NAME="SVC Coverage Results" MODIFIED="1575089726769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/svm" />
+    <SUITE FILE_PATH="coverage/tiny_ml$SVC.coverage" NAME="SVC Coverage Results" MODIFIED="1575372965378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyml/svm" />
   </component>
 </project>
